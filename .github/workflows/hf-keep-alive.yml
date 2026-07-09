@@ -1,0 +1,19 @@
+name: Keep Hugging Face Space awake
+
+on:
+  schedule:
+    # Every 36 hours — comfortably under HF's 48h sleep threshold, so the
+    # Space never actually goes idle even accounting for slight delays in
+    # GitHub's cron scheduler (which isn't always exactly on time).
+    - cron: "0 */36 * * *"
+  workflow_dispatch: {}   # lets you trigger a manual ping from the Actions tab
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping the Space
+        run: |
+          curl -sS -o /dev/null -w "HTTP %{http_code}\n" \
+            https://megmez-racemindai.hf.space \
+            --max-time 120
