@@ -1,0 +1,101 @@
+year,round,gp_name,circuit,driver,constructor,grid,position,points,status,laps
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,VER,Red Bull,1,1,25.0,Finished,57
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,PER,Red Bull,2,2,18.0,Finished,57
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,ALO,Aston Martin,5,3,15.0,Finished,57
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,SAI,Ferrari,4,4,12.0,Finished,57
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,HAM,Mercedes,7,5,10.0,Finished,57
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,STR,Aston Martin,8,6,8.0,Finished,57
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,RUS,Mercedes,6,7,6.0,Finished,57
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,BOT,Alfa Romeo,12,8,4.0,Finished,57
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,GAS,Alpine F1 Team,20,9,2.0,Finished,57
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,ALB,Williams,15,10,1.0,Finished,57
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,TSU,AlphaTauri,14,11,0.0,Finished,57
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,SAR,Williams,16,12,0.0,Lapped,56
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,MAG,Haas F1 Team,17,13,0.0,Lapped,56
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,DEV,AlphaTauri,19,14,0.0,Lapped,56
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,HUL,Haas F1 Team,10,15,0.0,Lapped,56
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,ZHO,Alfa Romeo,13,16,0.0,Lapped,56
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,NOR,McLaren,11,17,0.0,Lapped,55
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,OCO,Alpine F1 Team,9,18,0.0,Retired,41
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,LEC,Ferrari,3,19,0.0,Retired,39
+2023,1,Bahrain Grand Prix,Bahrain International Circuit,PIA,McLaren,18,20,0.0,Retired,13
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,PER,Red Bull,1,1,25.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,VER,Red Bull,15,2,19.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,ALO,Aston Martin,2,3,15.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,RUS,Mercedes,3,4,12.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,HAM,Mercedes,7,5,10.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,SAI,Ferrari,4,6,8.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,LEC,Ferrari,12,7,6.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,OCO,Alpine F1 Team,6,8,4.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,GAS,Alpine F1 Team,9,9,2.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,MAG,Haas F1 Team,13,10,1.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,TSU,AlphaTauri,16,11,0.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,HUL,Haas F1 Team,10,12,0.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,ZHO,Alfa Romeo,11,13,0.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,DEV,AlphaTauri,18,14,0.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,PIA,McLaren,8,15,0.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,SAR,Williams,20,16,0.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,NOR,McLaren,19,17,0.0,Finished,50
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,BOT,Alfa Romeo,14,18,0.0,Lapped,49
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,ALB,Williams,17,19,0.0,Retired,27
+2023,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,STR,Aston Martin,5,20,0.0,Retired,16
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,VER,Red Bull,1,1,25.0,Finished,58
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,HAM,Mercedes,3,2,18.0,Finished,58
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,ALO,Aston Martin,4,3,15.0,Finished,58
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,STR,Aston Martin,6,4,12.0,Finished,58
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,PER,Red Bull,20,5,11.0,Finished,58
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,NOR,McLaren,13,6,8.0,Finished,58
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,HUL,Haas F1 Team,10,7,6.0,Finished,58
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,PIA,McLaren,16,8,4.0,Finished,58
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,ZHO,Alfa Romeo,17,9,2.0,Finished,58
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,TSU,AlphaTauri,12,10,1.0,Finished,58
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,BOT,Alfa Romeo,19,11,0.0,Finished,58
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,SAI,Ferrari,5,12,0.0,Finished,58
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,GAS,Alpine F1 Team,9,13,0.0,Retired,56
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,OCO,Alpine F1 Team,11,14,0.0,Retired,56
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,DEV,AlphaTauri,15,15,0.0,Retired,56
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,SAR,Williams,18,16,0.0,Retired,56
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,MAG,Haas F1 Team,14,17,0.0,Retired,52
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,RUS,Mercedes,2,18,0.0,Retired,17
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,ALB,Williams,8,19,0.0,Retired,6
+2023,3,Australian Grand Prix,Albert Park Grand Prix Circuit,LEC,Ferrari,7,20,0.0,Retired,0
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,PER,Red Bull,3,1,25.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,VER,Red Bull,2,2,18.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,LEC,Ferrari,1,3,15.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,ALO,Aston Martin,6,4,12.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,SAI,Ferrari,4,5,10.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,HAM,Mercedes,5,6,8.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,STR,Aston Martin,9,7,6.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,RUS,Mercedes,11,8,5.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,NOR,McLaren,7,9,2.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,TSU,AlphaTauri,8,10,1.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,PIA,McLaren,10,11,0.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,ALB,Williams,12,12,0.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,MAG,Haas F1 Team,16,13,0.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,GAS,Alpine F1 Team,17,14,0.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,OCO,Alpine F1 Team,19,15,0.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,SAR,Williams,14,16,0.0,Finished,51
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,HUL,Haas F1 Team,20,17,0.0,Lapped,50
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,BOT,Alfa Romeo,13,18,0.0,Lapped,50
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,ZHO,Alfa Romeo,15,19,0.0,Retired,36
+2023,4,Azerbaijan Grand Prix,Baku City Circuit,DEV,AlphaTauri,18,20,0.0,Retired,9
+2023,5,Miami Grand Prix,Miami International Autodrome,VER,Red Bull,9,1,26.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,PER,Red Bull,1,2,18.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,ALO,Aston Martin,2,3,15.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,RUS,Mercedes,6,4,12.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,SAI,Ferrari,3,5,10.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,HAM,Mercedes,13,6,8.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,LEC,Ferrari,7,7,6.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,GAS,Alpine F1 Team,5,8,4.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,OCO,Alpine F1 Team,8,9,2.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,MAG,Haas F1 Team,4,10,1.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,TSU,AlphaTauri,17,11,0.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,STR,Aston Martin,18,12,0.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,BOT,Alfa Romeo,10,13,0.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,ALB,Williams,11,14,0.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,HUL,Haas F1 Team,12,15,0.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,ZHO,Alfa Romeo,14,16,0.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,NOR,McLaren,16,17,0.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,DEV,AlphaTauri,15,18,0.0,Finished,57
+2023,5,Miami Grand Prix,Miami International Autodrome,PIA,McLaren,19,19,0.0,Lapped,56
+2023,5,Miami Grand Prix,Miami International Autodrome,SAR,Williams,20,20,0.0,Lapped,56

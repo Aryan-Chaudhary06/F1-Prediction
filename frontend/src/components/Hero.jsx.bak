@@ -1,0 +1,168 @@
+import { useRef, useState, useEffect } from "react";
+import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
+import { getPredictorStatus } from "../api";
+
+export default function Hero() {
+  const heroRef = useRef(null);
+  const rightPanelRef = useRef(null);
+
+  // ── Scroll-shrink on the left headline ──────────────────────────────
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end start"],
+  });
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.72]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+
+  // ── Helmet mouse-follow ──────────────────────────────────────────────
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const springX = useSpring(x, { stiffness: 150, damping: 20 });
+  const springY = useSpring(y, { stiffness: 150, damping: 20 });
+
+  const handleMouseMove = (e) => {
+    const rect = rightPanelRef.current.getBoundingClientRect();
+    const nx = (e.clientX - rect.left - rect.width / 2) / (rect.width / 2);
+    const ny = (e.clientY - rect.top - rect.height / 2) / (rect.height / 2);
+    x.set(nx * 60);
+    y.set(ny * 55);
+  };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+
+  // ── Live status from the real backend ───────────────────────────────
+  const [status, setStatus] = useState(null);
+  const [statusError, setStatusError] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    getPredictorStatus()
+      .then((data) => { if (!cancelled) setStatus(data); })
+      .catch(() => { if (!cancelled) setStatusError(true); });
+    return () => { cancelled = true; };
+  }, []);
+
+  const accuracy = status?.metadata?.accuracy;
+  const isLive = status?.model_exists && !status?.is_stale;
+
+  return (
+    <section ref={heroRef} className="hero">
+      {/* LEFT: headline */}
+      <motion.div
+        className="hero-left"
+        style={{ scale, opacity, transformOrigin: "left bottom" }}
+      >
+        <div className="hero-eyebrow">// F1 Intelligence · Season 2026 · Live</div>
+
+        <h1 className="hero-h1">
+          <span className="ln-slide" style={{ animationDelay: "0.15s" }}>Race</span>
+          <span className="ln-slide outline" style={{ animationDelay: "0.28s" }}>Mind</span>
+          <span className="ln-slide red" style={{ animationDelay: "0.41s" }}>AI</span>
+        </h1>
+
+        <div className="hero-rule" />
+
+        <div className="hero-stats">
+          <div>
+            <div className="hstat-label">Model</div>
+            <div className="hstat-val">XGBoost</div>
+          </div>
+          <div>
+            <div className="hstat-label">Status</div>
+            <div className={`hstat-val ${isLive ? "pulse" : ""}`}>
+              {statusError ? "Offline" : status === null ? "—" : isLive ? "Live" : "Stale"}
+            </div>
+          </div>
+          <div>
+            <div className="hstat-label">Accuracy</div>
+            <div className="hstat-val" style={{ color: "var(--lime)" }}>
+              {accuracy != null ? `${(accuracy * 100).toFixed(1)}%` : statusError ? "N/A" : "…"}
+            </div>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* RIGHT: helmet mask zone */}
+      <div
+        className="hero-right"
+        ref={rightPanelRef}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div className="hero-next-race">
+          Next Race
+          <strong>British GP</strong>
+          <div className="race-round">Silverstone · Rd 13</div>
+        </div>
+
+        {/* Base face/driver layer.
+            NOTE: swap src for a real transparent driver photo/render once
+            you have one — this SVG is a stand-in silhouette so the layout
+            and mask effect can be reviewed before final art exists. */}
+        <div className="face-layer">
+          <FaceSilhouette />
+        </div>
+
+        {/* Helmet layer — follows mouse via spring physics */}
+        <motion.div
+          className="helmet-graphic"
+          style={{ x: springX, y: springY }}
+        >
+          <HelmetSVG />
+        </motion.div>
+
+        <div className="hero-right-text">
+          <div className="big">Predictor</div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Placeholder art — replace with real assets in /public when ready.
+function FaceSilhouette() {
+  return (
+    <svg viewBox="0 0 400 520" fill="none" xmlns="http://www.w3.org/2000/svg" className="face-svg">
+      <path d="M140 480 Q180 440 200 400 Q220 440 260 480 Q300 500 380 520 L20 520 Q100 500 140 480Z" fill="#0d0500"/>
+      <ellipse cx="200" cy="280" rx="130" ry="155" fill="#1a0d00"/>
+      <path d="M80 400 Q140 360 200 370 Q260 360 320 400 L340 520 L60 520Z" fill="#0a0a0a" stroke="#111" strokeWidth="1"/>
+      <ellipse cx="160" cy="290" rx="18" ry="12" fill="#251000" opacity="0.6"/>
+      <ellipse cx="240" cy="290" rx="18" ry="12" fill="#251000" opacity="0.6"/>
+      <path d="M175 335 Q200 345 225 335" stroke="#1a0a00" strokeWidth="2" fill="none"/>
+      <ellipse cx="72" cy="290" rx="14" ry="22" fill="#180c00"/>
+      <ellipse cx="328" cy="290" rx="14" ry="22" fill="#180c00"/>
+      <ellipse cx="200" cy="142" rx="128" ry="55" fill="#0a0500"/>
+      <path d="M75 190 Q80 130 200 118 Q320 130 325 190 Q300 155 200 148 Q100 155 75 190Z" fill="#080300"/>
+    </svg>
+  );
+}
+
+function HelmetSVG() {
+  return (
+    <svg viewBox="0 0 500 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="250" cy="290" rx="200" ry="210" fill="#1a1a1a"/>
+      <path d="M55 265 Q60 80 250 68 Q440 80 445 265" fill="#111" stroke="#222" strokeWidth="1.5"/>
+      <path d="M80 148 Q250 108 420 148 Q415 132 250 120 Q85 132 80 148Z" fill="#E8002D"/>
+      <path d="M90 165 Q250 130 410 165 L408 170 Q250 136 92 170Z" fill="#C8FF00" opacity="0.7"/>
+      <rect x="185" y="96" width="130" height="32" rx="3" fill="#E8002D" opacity="0.9"/>
+      <text x="250" y="116" textAnchor="middle" fill="white" fontSize="13" fontFamily="monospace" fontWeight="bold" letterSpacing="2">RACEMIND</text>
+      <path d="M75 258 Q80 195 250 186 Q420 195 425 258 Q380 238 250 232 Q120 238 75 258Z" fill="#04040e" stroke="#C8FF00" strokeWidth="1" opacity="0.98"/>
+      <path d="M100 220 Q250 208 400 220" stroke="rgba(200,255,0,0.25)" strokeWidth="2.5" strokeLinecap="round"/>
+      <path d="M115 234 Q250 224 385 234" stroke="rgba(255,255,255,0.06)" strokeWidth="1.5" strokeLinecap="round"/>
+      <path d="M76 258 Q80 196 250 187 Q420 196 424 258 Q380 240 250 233 Q120 240 76 258Z" fill="rgba(0,0,20,0.85)"/>
+      <path d="M75 278 Q250 310 425 278 L422 315 Q250 355 78 315Z" fill="#0f0f0f" stroke="#1a1a1a" strokeWidth="1"/>
+      <rect x="195" y="290" width="120" height="4" rx="2" fill="#080808"/>
+      <rect x="210" y="300" width="90" height="3" rx="1.5" fill="#080808"/>
+      <rect x="36" y="258" width="40" height="55" rx="6" fill="#E8002D"/>
+      <rect x="424" y="258" width="40" height="55" rx="6" fill="#E8002D"/>
+      <rect x="170" y="325" width="160" height="20" rx="2" fill="white" opacity="0.92"/>
+      <text x="250" y="339" textAnchor="middle" fill="#111" fontSize="11" fontFamily="sans-serif" fontWeight="600" letterSpacing="3">McLAREN F1</text>
+      <rect x="340" y="205" width="64" height="18" rx="2" fill="#C8FF00" opacity="0.9"/>
+      <text x="372" y="218" textAnchor="middle" fill="#000" fontSize="9" fontFamily="monospace" fontWeight="bold">XGBoost</text>
+      <ellipse cx="250" cy="290" rx="200" ry="210" fill="none" stroke="#2a2a2a" strokeWidth="1.5"/>
+    </svg>
+  );
+}

@@ -1,0 +1,138 @@
+.race-page { background: #050505; min-height: 100vh; padding-bottom: 6rem; color: #fff; width: 100%; box-sizing: border-box; }
+
+/* ── Hero ─────────────────────────────────────────────────────────────── */
+.race-hero {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 2rem;
+  padding: 3rem 3rem 2.5rem; border-bottom: 1px solid #262626; flex-wrap: wrap;
+}
+.race-hero-heading {
+  font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(2.6rem, 5vw, 4.6rem); line-height: 0.92;
+  text-transform: uppercase; letter-spacing: -0.02em;
+}
+.race-hero-heading .outline { color: #E10600; }
+.race-hero-sub { font-size: 0.84rem; color: #888; font-weight: 300; max-width: 42ch; margin-top: 1rem; line-height: 1.7; }
+
+.race-info-card {
+  background: #101010; border: 1px solid #262626; border-radius: 16px;
+  padding: 1.4rem 1.6rem; min-width: 16rem; text-align: center;
+}
+.race-info-circuit { width: 100%; max-width: 12rem; margin: 0 auto 0.8rem; }
+.race-info-gp { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; text-transform: uppercase; }
+.race-info-meta { font-family: var(--font-mono); font-size: 0.65rem; color: #888; margin-top: 0.4rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.race-info-country { font-family: var(--font-mono); font-size: 0.62rem; color: #E10600; margin-top: 0.3rem; text-transform: uppercase; }
+
+/* ── Section shell ────────────────────────────────────────────────────── */
+.race-section { padding: 2.4rem 3rem; border-bottom: 1px solid #262626; width: 100%; box-sizing: border-box; }
+.race-section-label {
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.2em;
+  color: #E10600; text-transform: uppercase; display: flex; align-items: center; gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.race-section-label::before { content: ""; width: 3px; height: 0.8em; background: #E10600; display: inline-block; }
+.race-section-desc { font-family: var(--font-mono); font-size: 0.68rem; color: #888; margin-bottom: 1.2rem; }
+
+.race-card {
+  background: #101010; border: 1px solid #262626; border-radius: 16px;
+  padding: 1.8rem 2rem; box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  width: 100%; box-sizing: border-box;
+}
+
+.race-empty-state {
+  font-family: var(--font-mono); font-size: 0.7rem; color: #666;
+  letter-spacing: 0.04em; padding: 2rem 0; text-align: center;
+}
+
+/* ── Session selection card ──────────────────────────────────────────── */
+.race-session-fields { display: flex; align-items: flex-end; gap: 1.4rem; flex-wrap: wrap; }
+.race-session-card { width: 100%; height: auto; min-height: 0; align-self: flex-start; }
+.race-session-card .race-field { flex: 0 0 auto; width: 18rem; min-width: 14rem; }
+.race-field { flex: 1; min-width: 12rem; }
+.race-field-label {
+  font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.1em; color: #888;
+  text-transform: uppercase; margin-bottom: 0.6rem;
+}
+.race-select {
+  width: 100%; font-family: var(--font-mono); font-size: 0.75rem;
+  color: #fff; background: #050505; border: 1px solid #262626; border-radius: 6px;
+  padding: 0.7rem 0.9rem;
+}
+.race-load-btn {
+  font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: #fff; background: #E10600;
+  border: none; border-radius: 6px; padding: 0.85rem 2rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.race-load-btn:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 4px 20px rgba(225,6,0,0.35); }
+.race-load-btn:disabled { opacity: 0.5; cursor: default; }
+
+.race-status-card {
+  margin-top: 1.2rem; display: flex; align-items: center; gap: 0.7rem;
+  font-family: var(--font-mono); font-size: 0.75rem; padding: 0.9rem 1.2rem;
+  border-radius: 10px; border: 1px solid;
+}
+.race-status-card.success { color: #00D4AA; border-color: #00D4AA44; background: #00D4AA0d; }
+.race-status-card.error { color: #E10600; border-color: #E1060044; background: #E106000d; }
+.race-status-check { font-size: 1rem; }
+.race-status-sub { margin-left: auto; color: #888; text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.65rem; }
+
+/* ── Race summary cards ───────────────────────────────────────────────── */
+.race-summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+@media (max-width: 800px) { .race-summary-grid { grid-template-columns: 1fr; } }
+.race-stat-card {
+  background: #101010; border: 1px solid #262626; border-radius: 16px;
+  padding: 1.8rem; transition: border-color 0.2s;
+}
+.race-stat-card:hover { border-color: #E10600; }
+.race-stat-icon { font-size: 1.6rem; margin-bottom: 0.6rem; }
+.race-stat-value { font-family: var(--font-display); font-weight: 900; font-size: 2.4rem; }
+.race-stat-sub { font-family: var(--font-mono); font-size: 0.62rem; color: #888; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 0.4rem; }
+
+/* ── Lap time evolution ───────────────────────────────────────────────── */
+.race-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; min-height: 1.8rem; }
+.race-pill {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.04em;
+  color: var(--pill-color); border: 1px solid var(--pill-color); border-radius: 999px;
+  padding: 0.35rem 0.5rem 0.35rem 0.8rem; background: color-mix(in srgb, var(--pill-color) 12%, transparent);
+}
+.race-pill button { background: none; border: none; color: inherit; font-size: 0.9rem; cursor: pointer; line-height: 1; padding: 0 0.2rem; }
+
+.race-add-select {
+  margin-top: 0.8rem; font-family: var(--font-mono); font-size: 0.7rem;
+  color: #fff; background: #050505; border: 1px solid #262626; border-radius: 6px; padding: 0.5rem 0.8rem;
+}
+.race-helper-text { font-family: var(--font-mono); font-size: 0.62rem; color: #555; margin-top: 0.8rem; font-style: italic; }
+
+.race-chart-wrap { margin-top: 1.6rem; width: 100%; }
+.lap-chart-svg, .tire-chart-svg { display: block; width: 100% !important; height: auto !important; max-width: 100%; }
+.lap-chart-grid { stroke: #1a1a1a; stroke-width: 1; }
+.lap-chart-tick, .tire-chart-tick { fill: #888; font-family: var(--font-mono); font-size: 10px; }
+.lap-chart-axis-title { fill: #888; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+.tire-chart-driver-label { fill: #ccc; font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 0.03em; }
+
+/* ── Tire strategy legend ─────────────────────────────────────────────── */
+.race-compound-legend { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-top: 1.4rem; padding-top: 1.2rem; border-top: 1px solid #1a1a1a; }
+.race-compound-chip { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.65rem; color: #ccc; text-transform: uppercase; letter-spacing: 0.04em; }
+.race-compound-dot { width: 9px; height: 9px; border-radius: 50%; }
+
+/* ── Race results table ───────────────────────────────────────────────── */
+.race-table-wrap { overflow-x: auto; border: 1px solid #262626; border-radius: 16px; }
+.race-table { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 0.75rem; }
+.race-table thead th {
+  position: sticky; top: 0; background: #101010; color: #888; text-align: left;
+  padding: 0.9rem 1.1rem; font-size: 0.6rem; letter-spacing: 0.06em; text-transform: uppercase;
+  border-bottom: 1px solid #262626; white-space: nowrap;
+}
+.race-table tbody td { padding: 0.8rem 1.1rem; border-bottom: 1px solid #1a1a1a; white-space: nowrap; }
+.race-table tbody tr.zebra { background: #0a0a0a; }
+.race-table tbody tr:hover { background: #151515; }
+.race-table-pos { font-family: var(--font-display); font-weight: 800; font-size: 1rem; color: #fff; }
+.race-table-driver { font-weight: 700; color: #E10600; letter-spacing: 0.03em; }
+
+.race-status-badge {
+  display: inline-block; font-size: 0.6rem; letter-spacing: 0.04em; text-transform: uppercase;
+  padding: 0.2rem 0.6rem; border-radius: 999px; border: 1px solid;
+}
+.race-status-badge.finished { color: #00D4AA; border-color: #00D4AA; }
+.race-status-badge.dnf { color: #E10600; border-color: #E10600; }

@@ -1,0 +1,101 @@
+year,round,gp_name,circuit,driver,constructor,grid,position,points,status,laps
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,RUS,Mercedes,1,1,25.0,Finished,58
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,ANT,Mercedes,2,2,18.0,Finished,58
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,LEC,Ferrari,4,3,15.0,Finished,58
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,HAM,Ferrari,7,4,12.0,Finished,58
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,NOR,McLaren,6,5,10.0,Finished,58
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,VER,Red Bull,20,6,8.0,Finished,58
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,BEA,Haas F1 Team,12,7,6.0,Lapped,57
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,LIN,RB F1 Team,9,8,4.0,Lapped,57
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,BOR,Audi,10,9,2.0,Lapped,57
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,GAS,Alpine F1 Team,14,10,1.0,Lapped,57
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,OCO,Haas F1 Team,13,11,0.0,Lapped,57
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,ALB,Williams,15,12,0.0,Lapped,57
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,LAW,RB F1 Team,8,13,0.0,Lapped,57
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,COL,Alpine F1 Team,16,14,0.0,Lapped,56
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,SAI,Williams,21,15,0.0,Lapped,56
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,PER,Cadillac F1 Team,18,16,0.0,Lapped,55
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,STR,Aston Martin,22,17,0.0,Lapped,43
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,ALO,Aston Martin,17,18,0.0,Retired,21
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,BOT,Cadillac F1 Team,19,19,0.0,Retired,15
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,HAD,Red Bull,3,20,0.0,Retired,10
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,PIA,McLaren,5,21,0.0,Did not start,0
+2026,1,Australian Grand Prix,Albert Park Grand Prix Circuit,HUL,Audi,11,22,0.0,Did not start,0
+2026,2,Chinese Grand Prix,Shanghai International Circuit,ANT,Mercedes,1,1,25.0,Finished,56
+2026,2,Chinese Grand Prix,Shanghai International Circuit,RUS,Mercedes,2,2,18.0,Finished,56
+2026,2,Chinese Grand Prix,Shanghai International Circuit,HAM,Ferrari,3,3,15.0,Finished,56
+2026,2,Chinese Grand Prix,Shanghai International Circuit,LEC,Ferrari,4,4,12.0,Finished,56
+2026,2,Chinese Grand Prix,Shanghai International Circuit,BEA,Haas F1 Team,10,5,10.0,Finished,56
+2026,2,Chinese Grand Prix,Shanghai International Circuit,GAS,Alpine F1 Team,7,6,8.0,Finished,56
+2026,2,Chinese Grand Prix,Shanghai International Circuit,LAW,RB F1 Team,14,7,6.0,Finished,56
+2026,2,Chinese Grand Prix,Shanghai International Circuit,HAD,Red Bull,9,8,4.0,Finished,56
+2026,2,Chinese Grand Prix,Shanghai International Circuit,SAI,Williams,17,9,2.0,Lapped,55
+2026,2,Chinese Grand Prix,Shanghai International Circuit,COL,Alpine F1 Team,12,10,1.0,Lapped,55
+2026,2,Chinese Grand Prix,Shanghai International Circuit,HUL,Audi,11,11,0.0,Lapped,55
+2026,2,Chinese Grand Prix,Shanghai International Circuit,LIN,RB F1 Team,15,12,0.0,Lapped,55
+2026,2,Chinese Grand Prix,Shanghai International Circuit,BOT,Cadillac F1 Team,19,13,0.0,Lapped,55
+2026,2,Chinese Grand Prix,Shanghai International Circuit,OCO,Haas F1 Team,13,14,0.0,Lapped,55
+2026,2,Chinese Grand Prix,Shanghai International Circuit,PER,Cadillac F1 Team,21,15,0.0,Lapped,55
+2026,2,Chinese Grand Prix,Shanghai International Circuit,VER,Red Bull,8,16,0.0,Retired,45
+2026,2,Chinese Grand Prix,Shanghai International Circuit,ALO,Aston Martin,18,17,0.0,Retired,32
+2026,2,Chinese Grand Prix,Shanghai International Circuit,STR,Aston Martin,20,18,0.0,Retired,9
+2026,2,Chinese Grand Prix,Shanghai International Circuit,PIA,McLaren,5,19,0.0,Did not start,0
+2026,2,Chinese Grand Prix,Shanghai International Circuit,NOR,McLaren,6,20,0.0,Did not start,0
+2026,2,Chinese Grand Prix,Shanghai International Circuit,BOR,Audi,16,21,0.0,Did not start,0
+2026,2,Chinese Grand Prix,Shanghai International Circuit,ALB,Williams,22,22,0.0,Did not start,0
+2026,3,Japanese Grand Prix,Suzuka Circuit,ANT,Mercedes,1,1,25.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,PIA,McLaren,3,2,18.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,LEC,Ferrari,4,3,15.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,RUS,Mercedes,2,4,12.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,NOR,McLaren,5,5,10.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,HAM,Ferrari,6,6,8.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,GAS,Alpine F1 Team,7,7,6.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,VER,Red Bull,11,8,4.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,LAW,RB F1 Team,14,9,2.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,OCO,Haas F1 Team,12,10,1.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,HUL,Audi,13,11,0.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,HAD,Red Bull,8,12,0.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,BOR,Audi,9,13,0.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,LIN,RB F1 Team,10,14,0.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,SAI,Williams,16,15,0.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,COL,Alpine F1 Team,15,16,0.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,PER,Cadillac F1 Team,19,17,0.0,Finished,53
+2026,3,Japanese Grand Prix,Suzuka Circuit,ALO,Aston Martin,21,18,0.0,Lapped,52
+2026,3,Japanese Grand Prix,Suzuka Circuit,BOT,Cadillac F1 Team,20,19,0.0,Lapped,52
+2026,3,Japanese Grand Prix,Suzuka Circuit,ALB,Williams,17,20,0.0,Lapped,51
+2026,3,Japanese Grand Prix,Suzuka Circuit,STR,Aston Martin,22,21,0.0,Retired,30
+2026,3,Japanese Grand Prix,Suzuka Circuit,BEA,Haas F1 Team,18,22,0.0,Retired,20
+2026,4,Miami Grand Prix,Miami International Autodrome,ANT,Mercedes,1,1,25.0,Finished,57
+2026,4,Miami Grand Prix,Miami International Autodrome,NOR,McLaren,4,2,18.0,Finished,57
+2026,4,Miami Grand Prix,Miami International Autodrome,PIA,McLaren,7,3,15.0,Finished,57
+2026,4,Miami Grand Prix,Miami International Autodrome,RUS,Mercedes,5,4,12.0,Finished,57
+2026,4,Miami Grand Prix,Miami International Autodrome,VER,Red Bull,2,5,10.0,Finished,57
+2026,4,Miami Grand Prix,Miami International Autodrome,HAM,Ferrari,6,6,8.0,Finished,57
+2026,4,Miami Grand Prix,Miami International Autodrome,COL,Alpine F1 Team,8,7,6.0,Finished,57
+2026,4,Miami Grand Prix,Miami International Autodrome,LEC,Ferrari,3,8,4.0,Finished,57
+2026,4,Miami Grand Prix,Miami International Autodrome,SAI,Williams,13,9,2.0,Finished,57
+2026,4,Miami Grand Prix,Miami International Autodrome,ALB,Williams,15,10,1.0,Finished,57
+2026,4,Miami Grand Prix,Miami International Autodrome,BEA,Haas F1 Team,12,11,0.0,Lapped,56
+2026,4,Miami Grand Prix,Miami International Autodrome,BOR,Audi,21,12,0.0,Lapped,56
+2026,4,Miami Grand Prix,Miami International Autodrome,OCO,Haas F1 Team,14,13,0.0,Lapped,56
+2026,4,Miami Grand Prix,Miami International Autodrome,LIN,RB F1 Team,16,14,0.0,Lapped,56
+2026,4,Miami Grand Prix,Miami International Autodrome,ALO,Aston Martin,17,15,0.0,Lapped,56
+2026,4,Miami Grand Prix,Miami International Autodrome,PER,Cadillac F1 Team,20,16,0.0,Lapped,56
+2026,4,Miami Grand Prix,Miami International Autodrome,STR,Aston Martin,18,17,0.0,Lapped,56
+2026,4,Miami Grand Prix,Miami International Autodrome,BOT,Cadillac F1 Team,19,18,0.0,Lapped,55
+2026,4,Miami Grand Prix,Miami International Autodrome,HUL,Audi,10,19,0.0,Retired,7
+2026,4,Miami Grand Prix,Miami International Autodrome,LAW,RB F1 Team,11,20,0.0,Retired,6
+2026,4,Miami Grand Prix,Miami International Autodrome,GAS,Alpine F1 Team,9,21,0.0,Retired,4
+2026,4,Miami Grand Prix,Miami International Autodrome,HAD,Red Bull,22,22,0.0,Retired,4
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,ANT,Mercedes,2,1,25.0,Finished,68
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,HAM,Ferrari,5,2,18.0,Finished,68
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,VER,Red Bull,6,3,15.0,Finished,68
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,LEC,Ferrari,8,4,12.0,Finished,68
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,HAD,Red Bull,7,5,10.0,Lapped,67
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,COL,Alpine F1 Team,10,6,8.0,Lapped,67
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,LAW,RB F1 Team,12,7,6.0,Lapped,67
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,GAS,Alpine F1 Team,14,8,4.0,Lapped,67
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,SAI,Williams,15,9,2.0,Lapped,67
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,BEA,Haas F1 Team,16,10,1.0,Lapped,67
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,PIA,McLaren,4,11,0.0,Lapped,66
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,HUL,Audi,11,12,0.0,Lapped,66

@@ -1,0 +1,84 @@
+.rail-section { height: 300vh; position: relative; border-top: 1px solid var(--line); }
+
+.rail-sticky {
+  position: sticky; top: 0; height: 100vh; overflow: hidden;
+  display: flex; align-items: stretch;
+}
+
+.rail-label-col {
+  flex-shrink: 0; width: 280px;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 0 2.5rem 4rem;
+  border-right: 1px solid var(--line); background: var(--black); position: relative; z-index: 5;
+}
+.rail-label { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.22em; color: var(--red); text-transform: uppercase; margin-bottom: 1.5rem; }
+.rail-heading { font-family: var(--font-display); font-weight: 900; font-size: clamp(3rem,4vw,4.5rem); text-transform: uppercase; letter-spacing:-0.02em; line-height:0.88; margin-bottom:1.2rem; }
+.rail-heading .outline { color: transparent; -webkit-text-stroke: 1px #333; }
+.rail-sub { font-size: 0.78rem; color: var(--gray); line-height: 1.7; font-weight: 300; margin-bottom: 2rem; }
+.rail-progress-wrap { width: 100%; height: 1px; background: var(--line); }
+.rail-progress-fill { height: 100%; background: var(--red); width: 100%; }
+
+.rail-overflow { flex: 1; overflow: hidden; position: relative; }
+
+.rail-track {
+  display: flex; height: 100%; align-items: center;
+  gap: 2px; padding: 0 3rem;
+  will-change: transform;
+}
+.rail-spacer { flex-shrink: 0; width: 8vw; }
+
+.race-card {
+  flex-shrink: 0; width: 280px; height: 76vh;
+  background: var(--black-2); border: 1px solid #151515;
+  display: flex; flex-direction: column;
+  position: relative; overflow: hidden;
+  transition: border-color 0.25s;
+}
+.race-card:hover { border-color: #2a2a2a; }
+
+.rc-stripe { position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+.rc-num { position: absolute; top: 1.4rem; right: 1.4rem; font-family: var(--font-mono); font-size: 0.55rem; color: #222; letter-spacing: 0.1em; }
+
+.rc-visual {
+  flex: 1; min-height: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 1.6rem 1.4rem 0.5rem;
+  gap: 0.6rem;
+}
+
+.rc-podium-label { font-family: var(--font-mono); font-size: 0.55rem; letter-spacing: 0.18em; color: var(--gray-dim); text-transform: uppercase; align-self: flex-start; }
+.rc-podium-loading { font-family: var(--font-mono); font-size: 0.6rem; color: var(--gray-dim); letter-spacing: 0.08em; }
+
+.rc-results-empty { position: relative; width: 100%; height: 100%; opacity: 0.35; }
+.rc-results-empty-label {
+  position: absolute; bottom: 0.3rem; left: 0; right: 0; text-align: center;
+  font-family: var(--font-mono); font-size: 0.55rem; letter-spacing: 0.1em;
+  color: var(--gray); text-transform: uppercase;
+}
+
+/* ── Podium blocks (P2 / P1 / P3) ── */
+.podium-graphic { flex: 1; width: 100%; display: flex; align-items: flex-end; justify-content: center; gap: 0.5rem; }
+.podium-slot { flex: 1; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
+.podium-avatar {
+  width: 30px; height: 30px; border-radius: 50%; border: 2px solid;
+  display: flex; align-items: center; justify-content: center;
+  background: #111; margin-bottom: 0.35rem; flex-shrink: 0;
+}
+.podium-avatar-num { font-family: var(--font-mono); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.01em; }
+.podium-driver {
+  font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.05em;
+  color: var(--white); text-transform: uppercase; font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+.podium-block {
+  width: 100%; border-radius: 2px 2px 0 0;
+  display: flex; align-items: flex-start; justify-content: center;
+  padding-top: 0.35rem;
+}
+.podium-num { font-family: var(--font-display); font-weight: 900; font-size: 1.2rem; color: rgba(242,242,242,0.5); }
+
+.rc-body { flex-shrink: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 1rem 2rem 2rem; }
+.rc-tag { font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.16em; color: var(--gray); text-transform: uppercase; margin-bottom: 0.6rem; }
+.rc-name { font-family: var(--font-display); font-weight: 800; font-size: 2rem; text-transform: uppercase; letter-spacing: -0.01em; line-height: 1; margin-bottom: 0.4rem; }
+.rc-circuit { font-size: 0.72rem; color: var(--gray); font-weight: 300; }
+

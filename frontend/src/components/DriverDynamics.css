@@ -1,0 +1,145 @@
+.dyn-page { background: #050505; min-height: 100vh; padding-bottom: 6rem; color: #fff; }
+
+.dyn-loading, .dyn-error {
+  font-family: var(--font-mono); font-size: 0.7rem; color: #888; letter-spacing: 0.06em;
+  text-transform: uppercase; padding: 2rem 3rem;
+}
+.dyn-error { color: #E10600; }
+
+/* ── Hero ─────────────────────────────────────────────────────────────── */
+.dyn-hero {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  padding: 3rem 3rem 2.5rem; border-bottom: 1px solid #262626;
+}
+.dyn-hero-heading {
+  font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(2.6rem, 5vw, 4.6rem); line-height: 0.92;
+  text-transform: uppercase; letter-spacing: -0.02em;
+}
+.dyn-hero-heading .outline { color: transparent; -webkit-text-stroke: 1px #333; }
+.dyn-hero-sub { font-size: 0.84rem; color: #888; font-weight: 300; max-width: 42ch; margin-top: 1rem; line-height: 1.7; }
+.dyn-season-select {
+  font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.06em;
+  color: #fff; border: 1px solid #262626; padding: 0.6rem 1.1rem; background: #101010;
+}
+
+/* ── Section shell ────────────────────────────────────────────────────── */
+.dyn-section { padding: 3rem; border-bottom: 1px solid #262626; }
+.dyn-section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.4rem; }
+.dyn-card-label {
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.2em;
+  color: #E10600; text-transform: uppercase; display: flex; align-items: center; gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+.dyn-card-label::before { content: ""; width: 3px; height: 0.8em; background: #E10600; display: inline-block; }
+
+.dyn-card {
+  background: #101010; border: 1px solid #262626; border-radius: 10px;
+  padding: 1.8rem 2rem;
+}
+
+.dyn-empty-state {
+  font-family: var(--font-mono); font-size: 0.7rem; color: #666;
+  letter-spacing: 0.04em; padding: 2rem 0; text-align: center;
+}
+
+/* ── Compare drivers + radar layout ──────────────────────────────────── */
+.dyn-radar-divider { border-top: 1px solid #262626; margin: 1.8rem 0 1.6rem; }
+
+.dyn-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; min-height: 2rem; }
+.dyn-pill {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.04em;
+  color: var(--pill-color); border: 1px solid var(--pill-color); border-radius: 999px;
+  padding: 0.35rem 0.5rem 0.35rem 0.8rem; background: color-mix(in srgb, var(--pill-color) 12%, transparent);
+}
+.dyn-pill button {
+  background: none; border: none; color: inherit; font-size: 0.9rem; cursor: pointer;
+  line-height: 1; padding: 0 0.2rem;
+}
+.dyn-pills-empty { font-family: var(--font-mono); font-size: 0.68rem; color: #555; }
+
+.dyn-add-select {
+  width: 100%; margin-top: 0.9rem; font-family: var(--font-mono); font-size: 0.7rem;
+  color: #fff; background: #050505; border: 1px solid #262626; padding: 0.6rem 0.8rem;
+}
+
+.dyn-helper-text { font-family: var(--font-mono); font-size: 0.62rem; color: #555; margin-top: 1rem; font-style: italic; }
+
+/* ── Radar card ───────────────────────────────────────────────────────── */
+.dyn-radar-layout { display: flex; flex-direction: column; align-items: center; gap: 1.2rem; }
+.radar-svg { width: 100%; max-width: 32rem; overflow: visible; }
+.radar-ring { fill: none; stroke: #1a1a1a; stroke-width: 1; }
+.radar-spoke { stroke: #1a1a1a; stroke-width: 1; }
+.radar-axis-label { fill: #ccc; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.03em; }
+
+.dyn-radar-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.4rem; }
+.dyn-legend-row { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.68rem; }
+.dyn-legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.dyn-legend-name { color: #fff; text-transform: uppercase; }
+.dyn-legend-avg { color: #888; }
+
+/* ── Quick insight cards ──────────────────────────────────────────────── */
+.dyn-insight-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
+@media (max-width: 980px) { .dyn-insight-grid { grid-template-columns: repeat(2, 1fr); } }
+.dyn-insight-card {
+  background: #101010; border: 1px solid #262626; border-radius: 10px;
+  padding: 1.4rem 1.2rem; text-align: center; transition: border-color 0.2s;
+}
+.dyn-insight-card:hover { border-color: #E10600; }
+.dyn-insight-icon { font-size: 1.4rem; margin-bottom: 0.5rem; }
+.dyn-insight-value { font-family: var(--font-display); font-weight: 900; font-size: 2rem; }
+.dyn-insight-label { font-family: var(--font-mono); font-size: 0.58rem; color: #888; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.3rem; }
+.dyn-insight-driver { font-family: var(--font-mono); font-size: 0.65rem; color: #fff; margin-top: 0.5rem; text-transform: uppercase; }
+.dyn-badge {
+  display: inline-block; margin-top: 0.6rem; font-family: var(--font-mono); font-size: 0.55rem;
+  letter-spacing: 0.06em; text-transform: uppercase; padding: 0.15rem 0.6rem; border-radius: 999px;
+}
+.dyn-badge.best { color: #00D4AA; border: 1px solid #00D4AA; }
+.dyn-badge.average { color: #FF8C00; border: 1px solid #FF8C00; }
+.dyn-badge.needs-work { color: #E10600; border: 1px solid #E10600; }
+
+/* ── Driver scorecards ────────────────────────────────────────────────── */
+.dyn-toggle-pair { display: flex; border: 1px solid #262626; border-radius: 6px; overflow: hidden; }
+.dyn-toggle-pair button {
+  background: transparent; border: none; color: #888; font-family: var(--font-mono);
+  font-size: 0.6rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.5rem 0.9rem; cursor: pointer;
+}
+.dyn-toggle-pair button.active { background: #E10600; color: #fff; }
+
+.dyn-scorecard-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.2rem; }
+.dyn-scorecard {
+  background: #101010; border: 1px solid #262626; border-top: 3px solid var(--card-color);
+  border-radius: 10px; padding: 1.4rem; transition: transform 0.2s;
+}
+.dyn-scorecard-head { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.2rem; }
+.dyn-scorecard-code { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; }
+.dyn-scorecard-team { font-family: var(--font-mono); font-size: 0.58rem; color: #888; text-transform: uppercase; }
+.dyn-scorecard-score { margin-left: auto; font-family: var(--font-display); font-weight: 900; font-size: 1.8rem; color: var(--card-color); }
+
+.dyn-bar-row { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; margin-bottom: 0.55rem; }
+.dyn-bar-label { font-family: var(--font-mono); font-size: 0.6rem; color: #888; flex-shrink: 0; }
+.dyn-bar-track { flex: 1; height: 4px; background: #1a1a1a; border-radius: 2px; max-width: 6rem; }
+.dyn-bar-fill { display: block; height: 100%; border-radius: 2px; transition: width 0.5s cubic-bezier(0.16,1,0.3,1); }
+.dyn-bar-number { font-family: var(--font-mono); font-size: 0.68rem; color: #fff; min-width: 1.6rem; text-align: right; }
+
+.dyn-scorecard-profile { display: flex; gap: 1.2rem; margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid #1a1a1a; }
+.dyn-profile-col { flex: 1; }
+.dyn-profile-label { font-family: var(--font-mono); font-size: 0.55rem; color: #555; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.3rem; }
+.dyn-profile-item { font-family: var(--font-mono); font-size: 0.62rem; }
+.dyn-profile-item.strength { color: #00D4AA; }
+.dyn-profile-item.weakness { color: #E10600; }
+
+/* ── Comparison table ─────────────────────────────────────────────────── */
+.dyn-table-note { font-family: var(--font-mono); font-size: 0.6rem; color: #555; font-style: italic; margin-bottom: 1.2rem; max-width: 70ch; }
+.dyn-table-wrap { overflow-x: auto; border: 1px solid #262626; border-radius: 10px; }
+.dyn-table { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 0.72rem; }
+.dyn-table thead th {
+  position: sticky; top: 0; background: #101010; color: #888; text-align: left;
+  padding: 0.8rem 1rem; font-size: 0.58rem; letter-spacing: 0.06em; text-transform: uppercase;
+  border-bottom: 1px solid #262626; white-space: nowrap;
+}
+.dyn-table tbody td { padding: 0.7rem 1rem; border-bottom: 1px solid #1a1a1a; white-space: nowrap; }
+.dyn-table tbody tr.zebra { background: #0a0a0a; }
+.dyn-table tbody tr:hover { background: #151515; }
+.dyn-table-driver { display: flex; align-items: center; gap: 0.6rem; text-transform: uppercase; }

@@ -1,0 +1,57 @@
+.circuit-map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circuit-map-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.circuit-map-label {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.circuit-map-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.circuit-map-empty-mark {
+  width: 34%;
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    #222 0,
+    #222 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+.circuit-map-empty-label {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gray-dim);
+}
+
+.circuit-map-mini .circuit-map-empty-mark {
+  width: 40%;
+}

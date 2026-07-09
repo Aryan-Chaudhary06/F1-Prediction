@@ -1,0 +1,101 @@
+year,round,gp_name,circuit,driver,constructor,grid,position,points,status,laps
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,LEC,Ferrari,1,1,26.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,SAI,Ferrari,3,2,18.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,HAM,Mercedes,5,3,15.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,RUS,Mercedes,9,4,12.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,MAG,Haas F1 Team,7,5,10.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,BOT,Alfa Romeo,6,6,8.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,OCO,Alpine F1 Team,11,7,6.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,TSU,AlphaTauri,16,8,4.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,ALO,Alpine F1 Team,8,9,2.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,ZHO,Alfa Romeo,15,10,1.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,MSC,Haas F1 Team,12,11,0.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,STR,Aston Martin,19,12,0.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,ALB,Williams,14,13,0.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,RIC,McLaren,18,14,0.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,NOR,McLaren,13,15,0.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,LAT,Williams,20,16,0.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,HUL,Aston Martin,17,17,0.0,Finished,57
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,PER,Red Bull,4,18,0.0,Fuel pressure,56
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,VER,Red Bull,2,19,0.0,Fuel pressure,54
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,GAS,AlphaTauri,10,20,0.0,Power Unit,44
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,VER,Red Bull,4,1,25.0,Finished,50
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,LEC,Ferrari,2,2,19.0,Finished,50
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,SAI,Ferrari,3,3,15.0,Finished,50
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,PER,Red Bull,1,4,12.0,Finished,50
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,RUS,Mercedes,6,5,10.0,Finished,50
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,OCO,Alpine F1 Team,5,6,8.0,Finished,50
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,NOR,McLaren,11,7,6.0,Finished,50
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,GAS,AlphaTauri,9,8,4.0,Finished,50
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,MAG,Haas F1 Team,10,9,2.0,Finished,50
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,HAM,Mercedes,15,10,1.0,Finished,50
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,ZHO,Alfa Romeo,12,11,0.0,Finished,50
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,HUL,Aston Martin,17,12,0.0,Finished,50
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,STR,Aston Martin,13,13,0.0,+1 Lap,49
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,ALB,Williams,16,14,0.0,Collision damage,47
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,BOT,Alfa Romeo,8,15,0.0,Cooling system,36
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,ALO,Alpine F1 Team,7,16,0.0,Water pump,35
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,RIC,McLaren,14,17,0.0,Gearbox,35
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,LAT,Williams,18,18,0.0,Accident,14
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,TSU,AlphaTauri,19,19,0.0,Power Unit,0
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,MSC,Haas F1 Team,0,20,0.0,Withdrew,0
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,LEC,Ferrari,1,1,26.0,Finished,58
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,PER,Red Bull,3,2,18.0,Finished,58
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,RUS,Mercedes,6,3,15.0,Finished,58
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,HAM,Mercedes,5,4,12.0,Finished,58
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,NOR,McLaren,4,5,10.0,Finished,58
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,RIC,McLaren,7,6,8.0,Finished,58
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,OCO,Alpine F1 Team,8,7,6.0,Finished,58
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,BOT,Alfa Romeo,12,8,4.0,Finished,58
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,GAS,AlphaTauri,11,9,2.0,Finished,58
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,ALB,Williams,20,10,1.0,Finished,58
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,ZHO,Alfa Romeo,14,11,0.0,Finished,58
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,STR,Aston Martin,19,12,0.0,Finished,58
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,MSC,Haas F1 Team,15,13,0.0,+1 Lap,57
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,MAG,Haas F1 Team,16,14,0.0,+1 Lap,57
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,TSU,AlphaTauri,13,15,0.0,+1 Lap,57
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,LAT,Williams,18,16,0.0,+1 Lap,57
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,ALO,Alpine F1 Team,10,17,0.0,+1 Lap,57
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,VER,Red Bull,2,18,0.0,Fuel leak,38
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,VET,Aston Martin,17,19,0.0,Accident,22
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,SAI,Ferrari,9,20,0.0,Spun off,1
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,VER,Red Bull,1,1,26.0,Finished,63
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,PER,Red Bull,3,2,18.0,Finished,63
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,NOR,McLaren,5,3,15.0,Finished,63
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,RUS,Mercedes,11,4,12.0,Finished,63
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,BOT,Alfa Romeo,7,5,10.0,Finished,63
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,LEC,Ferrari,2,6,8.0,Finished,63
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,TSU,AlphaTauri,12,7,6.0,Finished,63
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,VET,Aston Martin,13,8,4.0,Finished,63
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,MAG,Haas F1 Team,8,9,2.0,Finished,63
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,STR,Aston Martin,15,10,1.0,+1 Lap,62
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,ALB,Williams,18,11,0.0,+1 Lap,62
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,GAS,AlphaTauri,17,12,0.0,+1 Lap,62
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,HAM,Mercedes,14,13,0.0,+1 Lap,62
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,OCO,Alpine F1 Team,16,14,0.0,+1 Lap,62
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,ZHO,Alfa Romeo,0,15,0.0,+1 Lap,62
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,LAT,Williams,19,16,0.0,+1 Lap,62
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,MSC,Haas F1 Team,10,17,0.0,+1 Lap,62
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,RIC,McLaren,6,18,0.0,+1 Lap,62
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,ALO,Alpine F1 Team,9,19,0.0,Collision damage,6
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,SAI,Ferrari,4,20,0.0,Collision,0
+2022,5,Miami Grand Prix,Miami International Autodrome,VER,Red Bull,3,1,26.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,LEC,Ferrari,1,2,18.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,SAI,Ferrari,2,3,15.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,PER,Red Bull,4,4,12.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,RUS,Mercedes,12,5,10.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,HAM,Mercedes,6,6,8.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,BOT,Alfa Romeo,5,7,6.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,OCO,Alpine F1 Team,20,8,4.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,ALB,Williams,18,9,2.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,STR,Aston Martin,0,10,1.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,ALO,Alpine F1 Team,11,11,0.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,TSU,AlphaTauri,9,12,0.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,RIC,McLaren,14,13,0.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,LAT,Williams,19,14,0.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,MSC,Haas F1 Team,15,15,0.0,Finished,57
+2022,5,Miami Grand Prix,Miami International Autodrome,MAG,Haas F1 Team,16,16,0.0,Front wing,56
+2022,5,Miami Grand Prix,Miami International Autodrome,VET,Aston Martin,0,17,0.0,Collision,54
+2022,5,Miami Grand Prix,Miami International Autodrome,GAS,AlphaTauri,7,18,0.0,Suspension,45
+2022,5,Miami Grand Prix,Miami International Autodrome,NOR,McLaren,8,19,0.0,Collision,39
+2022,5,Miami Grand Prix,Miami International Autodrome,ZHO,Alfa Romeo,17,20,0.0,Water leak,6

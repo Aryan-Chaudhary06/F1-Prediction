@@ -1,0 +1,174 @@
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 3rem; height: 52px;
+  background: rgba(5,5,5,0.92); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-logo { font-family: var(--font-display); font-weight: 900; font-size: 1.05rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.nav-logo span { color: var(--red); }
+.nav-links { display: flex; gap: 2.2rem; list-style: none; }
+.nav-links a { font-family: var(--font-display); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); transition: color 0.2s; }
+.nav-links a:hover { color: var(--white); }
+.nav-links a.active { color: var(--white); border-bottom: 1.5px solid var(--red); padding-bottom: 1px; }
+.nav-progress { position: absolute; bottom: 0; left: 0; height: 1px; background: var(--red); width: 0; transition: width 0.1s linear; }
+
+/* ── HERO LAYOUT ── */
+.hero {
+  height: 100vh; position: relative; overflow: hidden;
+  display: grid; grid-template-columns: 1fr 1fr;
+}
+
+/* ── LEFT PANEL ── */
+.hero-left {
+  position: relative; z-index: 10;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 0 3rem 4rem;
+  background: linear-gradient(90deg, var(--black) 55%, transparent 100%);
+}
+.hero-eyebrow {
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.2em;
+  color: var(--red); text-transform: uppercase; margin-bottom: 1.2rem;
+  opacity: 0; animation: fadeUp 0.7s 0.3s ease forwards;
+}
+.hero-h1 {
+  font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(5rem, 9.5vw, 9.5rem);
+  letter-spacing: -0.025em; line-height: 0.86; text-transform: uppercase;
+  overflow: hidden;
+}
+.ln-slide { display: block; transform: translateY(110%); animation: slideUp 0.85s ease forwards; }
+.ln-slide.outline { color: transparent; -webkit-text-stroke: 1px var(--white); }
+.ln-slide.red { color: var(--red); }
+
+.hero-rule { width: 0; height: 1px; background: #222; margin: 1.8rem 0; animation: growW 0.7s 0.85s ease forwards; }
+
+.hero-stats { display: flex; gap: 2.5rem; opacity: 0; animation: fadeUp 0.6s 1.05s ease forwards; }
+.hstat-label { font-family: var(--font-mono); font-size: 0.56rem; letter-spacing: 0.16em; color: #444; text-transform: uppercase; margin-bottom: 0.3rem; }
+.hstat-val { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; text-transform: uppercase; }
+.hstat-val.lime { color: var(--lime); }
+.pulse::before { content:''; display:inline-block; width:5px; height:5px; background:var(--lime); border-radius:50%; margin-right:7px; vertical-align:middle; animation:pulse 1.6s infinite; }
+
+/* ── LIVE STANDINGS MINI ── */
+.hero-podium {
+  margin-top: 1.8rem;
+  display: flex; flex-direction: column; gap: 0.6rem;
+  opacity: 0; animation: fadeUp 0.6s 1.3s ease forwards;
+}
+.podium-row {
+  display: flex; align-items: baseline; gap: 0.8rem;
+  opacity: 0; animation: fadeUp 0.5s ease forwards;
+  border-left: 1px solid #1a1a1a; padding-left: 0.8rem;
+}
+.podium-pos { font-family: var(--font-mono); font-size: 0.58rem; color: var(--gray); width: 24px; }
+.podium-name { font-family: var(--font-display); font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.04em; flex: 1; }
+.podium-pts { font-family: var(--font-mono); font-size: 0.62rem; color: var(--gray); }
+.podium-row:first-child .podium-name { color: var(--lime); }
+
+/* ── RIGHT PANEL ── */
+.hero-right {
+  position: relative; overflow: hidden;
+  background: radial-gradient(ellipse 70% 70% at 50% 50%, #100008 0%, var(--black) 80%);
+}
+
+.circuit-glow {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px; height: 400px;
+  background: radial-gradient(ellipse, rgba(232,0,45,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.circuit-loading {
+  font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray);
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+
+/* Constrains CircuitMap's own SVG to fit the hero panel — it's shared
+   with RaceRail's small "mini" cards, and without a `mini` prop here it
+   was rendering at a size meant for a much bigger canvas and overflowing. */
+.circuit-frame {
+  width: 100%; max-width: 420px; max-height: 70vh;
+  margin: 0 auto; display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.circuit-frame svg {
+  width: 100% !important; height: auto !important; max-height: 70vh;
+  display: block;
+}
+
+.circuit-wrap {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.circuit-svg {
+  width: 90%; height: 90%;
+  max-width: 600px; max-height: 440px;
+  overflow: visible;
+}
+
+.circuit-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 5px;
+  fill: rgba(242,242,242,0.25);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── Circuit info card ── */
+.circuit-info {
+  position: absolute; bottom: 3.5rem; left: 2.5rem;
+  border: 1px solid #1a1a1a; padding: 1rem 1.2rem;
+  background: rgba(5,5,5,0.7); backdrop-filter: blur(6px);
+  opacity: 0; animation: fadeUp 0.6s 2.4s ease forwards;
+}
+.ci-label { font-family: var(--font-mono); font-size: 0.55rem; letter-spacing: 0.2em; color: var(--red); text-transform: uppercase; margin-bottom: 0.3rem; }
+.ci-name { font-family: var(--font-display); font-weight: 800; font-size: 1.4rem; text-transform: uppercase; letter-spacing: -0.01em; margin-bottom: 0.6rem; }
+.ci-details { display: flex; gap: 1rem; font-family: var(--font-mono); font-size: 0.6rem; color: var(--gray); }
+.ci-details span::before { content: '· '; color: var(--gray-dim); }
+.ci-details span:first-child::before { content: ''; }
+
+/* ── Sector legend ── */
+.sector-legend {
+  position: absolute; top: 5rem; right: 2rem;
+  display: flex; flex-direction: column; gap: 0.5rem;
+  opacity: 0; animation: fadeUp 0.5s 2.6s ease forwards;
+}
+.sector-item { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.58rem; color: var(--gray); }
+.sector-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+
+/* ── Next race badge ── */
+.hero-next-race {
+  position: absolute; top: 4.5rem; left: 2.5rem;
+  border: 1px solid #1a1a1a; padding: 0.8rem 1rem;
+  font-family: var(--font-mono); font-size: 0.56rem;
+  letter-spacing: 0.14em; text-transform: uppercase; color: #444;
+  z-index: 10; background: rgba(5,5,5,0.5);
+  opacity: 0; animation: fadeUp 0.6s 1.6s ease forwards;
+}
+.hero-next-race strong { display: block; color: var(--white); font-size: 0.8rem; margin-top: 0.3rem; font-family: var(--font-display); font-weight: 800; text-transform: uppercase; }
+.hero-next-race .race-round { color: var(--red); font-size: 0.52rem; margin-top: 0.2rem; }
+
+/* ── Ghost text ── */
+.hero-right-text { position: absolute; bottom: 3rem; right: 2rem; pointer-events: none; }
+.hero-right-text .big {
+  font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(3rem, 5vw, 5rem);
+  text-transform: uppercase; letter-spacing: -0.02em;
+  color: transparent; -webkit-text-stroke: 1px #151515;
+  opacity: 0; animation: fadeUp 0.7s 1.8s ease forwards;
+}
+
+/* ── Animations ── */
+@keyframes slideUp { to { transform: translateY(0); } }
+@keyframes fadeUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
+@keyframes growW  { to { width: 100%; } }
+@keyframes pulse  { 0%,100%{opacity:1} 50%{opacity:0.2} }
+
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { display: none; }
+  .hero-left { background: var(--black); }
+}

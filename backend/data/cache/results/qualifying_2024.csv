@@ -1,0 +1,101 @@
+year,round,gp_name,circuit,position,driver,constructor,q1,q2,q3
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,1,VER,Red Bull,1:30.031,1:29.374,1:29.179
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,2,LEC,Ferrari,1:30.243,1:29.165,1:29.407
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,3,RUS,Mercedes,1:30.350,1:29.922,1:29.485
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,4,SAI,Ferrari,1:29.909,1:29.573,1:29.507
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,5,PER,Red Bull,1:30.221,1:29.932,1:29.537
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,6,ALO,Aston Martin,1:30.179,1:29.801,1:29.542
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,7,NOR,McLaren,1:30.143,1:29.941,1:29.614
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,8,PIA,McLaren,1:30.531,1:30.122,1:29.683
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,9,HAM,Mercedes,1:30.451,1:29.718,1:29.710
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,10,HUL,Haas F1 Team,1:30.566,1:29.851,1:30.502
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,11,TSU,RB F1 Team,1:30.481,1:30.129,
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,12,STR,Aston Martin,1:29.965,1:30.200,
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,13,ALB,Williams,1:30.397,1:30.221,
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,14,RIC,RB F1 Team,1:30.562,1:30.278,
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,15,MAG,Haas F1 Team,1:30.646,1:30.529,
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,16,BOT,Sauber,1:30.756,,
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,17,ZHO,Sauber,1:30.757,,
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,18,SAR,Williams,1:30.770,,
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,19,OCO,Alpine F1 Team,1:30.793,,
+2024,1,Bahrain Grand Prix,Bahrain International Circuit,20,GAS,Alpine F1 Team,1:30.948,,
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,1,VER,Red Bull,1:28.171,1:28.033,1:27.472
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,2,LEC,Ferrari,1:28.318,1:28.112,1:27.791
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,3,PER,Red Bull,1:28.638,1:28.467,1:27.807
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,4,ALO,Aston Martin,1:28.706,1:28.122,1:27.846
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,5,PIA,McLaren,1:28.755,1:28.343,1:28.089
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,6,NOR,McLaren,1:28.805,1:28.479,1:28.132
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,7,RUS,Mercedes,1:28.749,1:28.448,1:28.316
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,8,HAM,Mercedes,1:28.994,1:28.606,1:28.460
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,9,TSU,RB F1 Team,1:28.988,1:28.564,1:28.547
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,10,STR,Aston Martin,1:28.250,1:28.578,1:28.572
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,11,BEA,Ferrari,1:28.984,1:28.642,
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,12,ALB,Williams,1:29.107,1:28.980,
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,13,MAG,Haas F1 Team,1:29.069,1:29.020,
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,14,RIC,RB F1 Team,1:29.065,1:29.025,
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,15,HUL,Haas F1 Team,1:29.055,,
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,16,BOT,Sauber,1:29.179,,
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,17,OCO,Alpine F1 Team,1:29.475,,
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,18,GAS,Alpine F1 Team,1:29.479,,
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,19,SAR,Williams,1:29.526,,
+2024,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,20,ZHO,Sauber,,,
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,1,VER,Red Bull,1:16.819,1:16.387,1:15.915
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,2,SAI,Ferrari,1:16.731,1:16.189,1:16.185
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,3,PER,Red Bull,1:16.805,1:16.631,1:16.274
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,4,NOR,McLaren,1:17.430,1:16.750,1:16.315
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,5,LEC,Ferrari,1:16.984,1:16.304,1:16.435
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,6,PIA,McLaren,1:17.369,1:16.601,1:16.572
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,7,RUS,Mercedes,1:17.062,1:16.901,1:16.724
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,8,TSU,RB F1 Team,1:17.356,1:16.791,1:16.788
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,9,STR,Aston Martin,1:17.376,1:16.780,1:17.072
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,10,ALO,Aston Martin,1:16.991,1:16.710,1:17.552
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,11,HAM,Mercedes,1:17.499,1:16.960,
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,12,ALB,Williams,1:17.130,1:17.167,
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,13,BOT,Sauber,1:17.543,1:17.340,
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,14,MAG,Haas F1 Team,1:17.709,1:17.427,
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,15,OCO,Alpine F1 Team,1:17.617,1:17.697,
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,16,HUL,Haas F1 Team,1:17.976,,
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,17,GAS,Alpine F1 Team,1:17.982,,
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,18,RIC,RB F1 Team,1:18.085,,
+2024,3,Australian Grand Prix,Albert Park Grand Prix Circuit,19,ZHO,Sauber,1:18.188,,
+2024,4,Japanese Grand Prix,Suzuka Circuit,1,VER,Red Bull,1:28.866,1:28.740,1:28.197
+2024,4,Japanese Grand Prix,Suzuka Circuit,2,PER,Red Bull,1:29.303,1:28.752,1:28.263
+2024,4,Japanese Grand Prix,Suzuka Circuit,3,NOR,McLaren,1:29.536,1:28.940,1:28.489
+2024,4,Japanese Grand Prix,Suzuka Circuit,4,SAI,Ferrari,1:29.513,1:29.099,1:28.682
+2024,4,Japanese Grand Prix,Suzuka Circuit,5,ALO,Aston Martin,1:29.254,1:29.082,1:28.686
+2024,4,Japanese Grand Prix,Suzuka Circuit,6,PIA,McLaren,1:29.425,1:29.148,1:28.760
+2024,4,Japanese Grand Prix,Suzuka Circuit,7,HAM,Mercedes,1:29.661,1:28.887,1:28.766
+2024,4,Japanese Grand Prix,Suzuka Circuit,8,LEC,Ferrari,1:29.338,1:29.196,1:28.786
+2024,4,Japanese Grand Prix,Suzuka Circuit,9,RUS,Mercedes,1:29.799,1:29.140,1:29.008
+2024,4,Japanese Grand Prix,Suzuka Circuit,10,TSU,RB F1 Team,1:29.775,1:29.417,1:29.413
+2024,4,Japanese Grand Prix,Suzuka Circuit,11,RIC,RB F1 Team,1:29.727,1:29.472,
+2024,4,Japanese Grand Prix,Suzuka Circuit,12,HUL,Haas F1 Team,1:29.821,1:29.494,
+2024,4,Japanese Grand Prix,Suzuka Circuit,13,BOT,Sauber,1:29.602,1:29.593,
+2024,4,Japanese Grand Prix,Suzuka Circuit,14,ALB,Williams,1:29.963,1:29.714,
+2024,4,Japanese Grand Prix,Suzuka Circuit,15,OCO,Alpine F1 Team,1:29.811,1:29.816,
+2024,4,Japanese Grand Prix,Suzuka Circuit,16,STR,Aston Martin,1:30.024,,
+2024,4,Japanese Grand Prix,Suzuka Circuit,17,GAS,Alpine F1 Team,1:30.119,,
+2024,4,Japanese Grand Prix,Suzuka Circuit,18,MAG,Haas F1 Team,1:30.131,,
+2024,4,Japanese Grand Prix,Suzuka Circuit,19,SAR,Williams,1:30.139,,
+2024,4,Japanese Grand Prix,Suzuka Circuit,20,ZHO,Sauber,1:30.143,,
+2024,5,Chinese Grand Prix,Shanghai International Circuit,1,VER,Red Bull,1:34.742,1:33.794,1:33.660
+2024,5,Chinese Grand Prix,Shanghai International Circuit,2,PER,Red Bull,1:35.457,1:34.026,1:33.982
+2024,5,Chinese Grand Prix,Shanghai International Circuit,3,ALO,Aston Martin,1:35.116,1:34.652,1:34.148
+2024,5,Chinese Grand Prix,Shanghai International Circuit,4,NOR,McLaren,1:34.842,1:34.460,1:34.165
+2024,5,Chinese Grand Prix,Shanghai International Circuit,5,PIA,McLaren,1:35.014,1:34.659,1:34.273
+2024,5,Chinese Grand Prix,Shanghai International Circuit,6,LEC,Ferrari,1:34.797,1:34.399,1:34.289
+2024,5,Chinese Grand Prix,Shanghai International Circuit,7,SAI,Ferrari,1:34.970,1:34.368,1:34.297
+2024,5,Chinese Grand Prix,Shanghai International Circuit,8,RUS,Mercedes,1:35.084,1:34.609,1:34.433
+2024,5,Chinese Grand Prix,Shanghai International Circuit,9,HUL,Haas F1 Team,1:35.068,1:34.667,1:34.604
+2024,5,Chinese Grand Prix,Shanghai International Circuit,10,BOT,Sauber,1:35.169,1:34.769,1:34.665
+2024,5,Chinese Grand Prix,Shanghai International Circuit,11,STR,Aston Martin,1:35.334,1:34.838,
+2024,5,Chinese Grand Prix,Shanghai International Circuit,12,RIC,RB F1 Team,1:35.443,1:34.934,
+2024,5,Chinese Grand Prix,Shanghai International Circuit,13,OCO,Alpine F1 Team,1:35.356,1:35.223,
+2024,5,Chinese Grand Prix,Shanghai International Circuit,14,ALB,Williams,1:35.384,1:35.241,
+2024,5,Chinese Grand Prix,Shanghai International Circuit,15,GAS,Alpine F1 Team,1:35.287,1:35.463,
+2024,5,Chinese Grand Prix,Shanghai International Circuit,16,ZHO,Sauber,1:35.505,,
+2024,5,Chinese Grand Prix,Shanghai International Circuit,17,MAG,Haas F1 Team,1:35.516,,
+2024,5,Chinese Grand Prix,Shanghai International Circuit,18,HAM,Mercedes,1:35.573,,
+2024,5,Chinese Grand Prix,Shanghai International Circuit,19,TSU,RB F1 Team,1:35.746,,
+2024,5,Chinese Grand Prix,Shanghai International Circuit,20,SAR,Williams,1:36.358,,
+2024,6,Miami Grand Prix,Miami International Autodrome,1,VER,Red Bull,1:27.689,1:27.566,1:27.241

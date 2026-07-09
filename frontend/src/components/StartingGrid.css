@@ -1,0 +1,45 @@
+.grid-track { position: relative; margin: 0 auto; }
+
+.grid-startline {
+  position: absolute; top: -10px; bottom: -10px; left: -14px; width: 3px;
+  background: repeating-linear-gradient(180deg, #fff 0 6px, #111 6px 12px);
+  opacity: 0.85;
+}
+
+.grid-box {
+  position: absolute;
+  display: flex; flex-direction: column; align-items: center;
+  transition: transform 0.15s, filter 0.15s;
+}
+
+.grid-box--editable { cursor: grab; }
+.grid-box--editable:active { cursor: grabbing; }
+.grid-box--editable:hover { transform: scale(1.06); z-index: 2; }
+.grid-box--over { filter: drop-shadow(0 0 8px var(--lime)); transform: scale(1.08); z-index: 2; }
+
+.grid-box-label {
+  font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.04em;
+  color: var(--white); white-space: nowrap;
+  background: rgba(0,0,0,0.7); padding: 0.1rem 0.4rem; border-radius: 2px;
+}
+.grid-box-label--above { margin-bottom: 0.3rem; }
+.grid-box-label--below { margin-top: 0.3rem; }
+
+.grid-car-stack {
+  position: relative; display: flex; align-items: center; justify-content: center;
+}
+
+.grid-slot-bracket {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  border-left: 2px solid rgba(255,255,255,0.55);
+  pointer-events: none;
+}
+/* Short stubs at the top-left and bottom-left corners only (not a full
+   box) — matches the painted "starting line edge" mark on a real grid
+   box, oriented for cars facing left (solid edge = left, stubs = top/bottom). */
+.grid-slot-bracket::before, .grid-slot-bracket::after {
+  content: ""; position: absolute; left: 0; width: 9px; height: 2px;
+  background: rgba(255,255,255,0.55);
+}
+.grid-slot-bracket::before { top: 0; }
+.grid-slot-bracket::after { bottom: 0; }

@@ -6,3 +6,4 @@ data/race_model.pkl
 __pycache__/
 *.pyc
 .env
+Secondary frontend

@@ -1,0 +1,40 @@
+.finish-track {
+  position: relative; padding: 3rem 2rem 2rem;
+  background: linear-gradient(180deg, #0a0a0a 0%, var(--black) 70%);
+  border: 1px solid var(--line); overflow: hidden;
+}
+
+.finish-line { position: relative; height: 3px; margin-bottom: 3.5rem; }
+.finish-checkers {
+  position: absolute; inset: 0;
+  background: repeating-conic-gradient(#fff 0% 25%, #111 0% 50%) 0 0 / 16px 16px;
+  opacity: 0.85;
+}
+.finish-label {
+  position: absolute; right: 0; top: -1.6rem;
+  font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.22em;
+  color: var(--gray); text-transform: uppercase;
+}
+
+.finish-cars {
+  display: flex; align-items: flex-end; justify-content: center; gap: 3.5rem;
+}
+
+.finish-car-slot {
+  display: flex; flex-direction: column; align-items: center; gap: 0.6rem;
+}
+.finish-car-slot--1 { order: 2; }
+.finish-car-slot--2 { order: 1; }
+.finish-car-slot--3 { order: 3; }
+
+.finish-pos {
+  font-family: var(--font-display); font-weight: 900; font-size: 1.6rem;
+  color: var(--lime); letter-spacing: -0.01em;
+}
+.finish-car-slot--1 .finish-pos { color: var(--lime); font-size: 2rem; }
+.finish-car-slot--2 .finish-pos,
+.finish-car-slot--3 .finish-pos { color: var(--gray); }
+
+.finish-prob {
+  font-family: var(--font-mono); font-size: 0.72rem; color: var(--white);
+}

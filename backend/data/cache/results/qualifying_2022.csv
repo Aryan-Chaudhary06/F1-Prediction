@@ -1,0 +1,101 @@
+year,round,gp_name,circuit,position,driver,constructor,q1,q2,q3
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,1,LEC,Ferrari,1:31.471,1:30.932,1:30.558
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,2,VER,Red Bull,1:31.785,1:30.757,1:30.681
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,3,SAI,Ferrari,1:31.567,1:30.787,1:30.687
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,4,PER,Red Bull,1:32.311,1:31.008,1:30.921
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,5,HAM,Mercedes,1:32.285,1:31.048,1:31.238
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,6,BOT,Alfa Romeo,1:31.919,1:31.717,1:31.560
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,7,MAG,Haas F1 Team,1:31.955,1:31.461,1:31.808
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,8,ALO,Alpine F1 Team,1:32.346,1:31.621,1:32.195
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,9,RUS,Mercedes,1:32.269,1:31.252,1:32.216
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,10,GAS,AlphaTauri,1:32.096,1:31.635,1:32.338
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,11,OCO,Alpine F1 Team,1:32.041,1:31.782,
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,12,MSC,Haas F1 Team,1:32.380,1:31.998,
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,13,NOR,McLaren,1:32.239,1:32.008,
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,14,ALB,Williams,1:32.726,1:32.664,
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,15,ZHO,Alfa Romeo,1:32.493,1:33.543,
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,16,TSU,AlphaTauri,1:32.750,,
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,17,HUL,Aston Martin,1:32.777,,
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,18,RIC,McLaren,1:32.945,,
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,19,STR,Aston Martin,1:33.032,,
+2022,1,Bahrain Grand Prix,Bahrain International Circuit,20,LAT,Williams,1:33.634,,
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,1,PER,Red Bull,1:29.705,1:28.924,1:28.200
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,2,LEC,Ferrari,1:29.039,1:28.780,1:28.225
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,3,SAI,Ferrari,1:28.855,1:28.686,1:28.402
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,4,VER,Red Bull,1:28.928,1:28.945,1:28.461
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,5,OCO,Alpine F1 Team,1:30.093,1:29.584,1:29.068
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,6,RUS,Mercedes,1:29.680,1:29.618,1:29.104
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,7,ALO,Alpine F1 Team,1:29.978,1:29.295,1:29.147
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,8,BOT,Alfa Romeo,1:29.683,1:29.404,1:29.183
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,9,GAS,AlphaTauri,1:29.891,1:29.418,1:29.254
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,10,MAG,Haas F1 Team,1:29.831,1:29.546,1:29.588
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,11,NOR,McLaren,1:29.957,1:29.651,
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,12,RIC,McLaren,1:30.009,1:29.773,
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,13,ZHO,Alfa Romeo,1:29.978,1:29.819,
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,14,MSC,Haas F1 Team,1:30.167,1:29.920,
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,15,STR,Aston Martin,1:30.256,1:31.009,
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,16,HAM,Mercedes,1:30.343,,
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,17,ALB,Williams,1:30.492,,
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,18,HUL,Aston Martin,1:30.543,,
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,19,LAT,Williams,1:31.817,,
+2022,2,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,20,TSU,AlphaTauri,,,
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,1,LEC,Ferrari,1:18.881,1:18.606,1:17.868
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,2,VER,Red Bull,1:18.580,1:18.611,1:18.154
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,3,PER,Red Bull,1:18.834,1:18.340,1:18.240
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,4,NOR,McLaren,1:19.280,1:19.066,1:18.703
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,5,HAM,Mercedes,1:19.401,1:19.106,1:18.825
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,6,RUS,Mercedes,1:19.405,1:19.076,1:18.933
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,7,RIC,McLaren,1:19.665,1:19.130,1:19.032
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,8,OCO,Alpine F1 Team,1:19.605,1:19.136,1:19.061
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,9,SAI,Ferrari,1:18.983,1:18.469,1:19.408
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,10,ALO,Alpine F1 Team,1:19.192,1:18.815,
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,11,GAS,AlphaTauri,1:19.580,1:19.226,
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,12,BOT,Alfa Romeo,1:19.251,1:19.410,
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,13,TSU,AlphaTauri,1:19.742,1:19.424,
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,14,ZHO,Alfa Romeo,1:19.910,1:20.155,
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,15,MSC,Haas F1 Team,1:20.104,1:20.465,
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,16,ALB,Williams,1:20.135,,
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,17,MAG,Haas F1 Team,1:20.254,,
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,18,VET,Aston Martin,1:21.149,,
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,19,LAT,Williams,1:21.372,,
+2022,3,Australian Grand Prix,Albert Park Grand Prix Circuit,20,STR,Aston Martin,,,
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,1,VER,Red Bull,1:19.295,1:18.793,1:27.999
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,2,LEC,Ferrari,1:18.796,1:19.584,1:28.778
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,3,NOR,McLaren,1:20.168,1:19.294,1:29.131
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,4,MAG,Haas F1 Team,1:20.147,1:19.902,1:29.164
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,5,ALO,Alpine F1 Team,1:20.198,1:19.595,1:29.202
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,6,RIC,McLaren,1:19.980,1:20.031,1:29.742
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,7,PER,Red Bull,1:19.773,1:19.296,1:29.808
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,8,BOT,Alfa Romeo,1:20.419,1:20.192,1:30.439
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,9,VET,Aston Martin,1:20.364,1:19.957,1:31.062
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,10,SAI,Ferrari,1:19.305,1:18.990,
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,11,RUS,Mercedes,1:20.383,1:20.757,
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,12,MSC,Haas F1 Team,1:20.422,1:20.916,
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,13,HAM,Mercedes,1:20.470,1:21.138,
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,14,ZHO,Alfa Romeo,1:19.730,1:21.434,
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,15,STR,Aston Martin,1:20.342,1:28.119,
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,16,TSU,AlphaTauri,1:20.474,,
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,17,GAS,AlphaTauri,1:20.732,,
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,18,LAT,Williams,1:21.971,,
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,19,OCO,Alpine F1 Team,1:22.338,,
+2022,4,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,20,ALB,Williams,,,
+2022,5,Miami Grand Prix,Miami International Autodrome,1,LEC,Ferrari,1:29.474,1:29.130,1:28.796
+2022,5,Miami Grand Prix,Miami International Autodrome,2,SAI,Ferrari,1:30.079,1:29.729,1:28.986
+2022,5,Miami Grand Prix,Miami International Autodrome,3,VER,Red Bull,1:29.836,1:29.202,1:28.991
+2022,5,Miami Grand Prix,Miami International Autodrome,4,PER,Red Bull,1:30.055,1:29.673,1:29.036
+2022,5,Miami Grand Prix,Miami International Autodrome,5,BOT,Alfa Romeo,1:30.845,1:29.751,1:29.475
+2022,5,Miami Grand Prix,Miami International Autodrome,6,HAM,Mercedes,1:30.388,1:29.797,1:29.625
+2022,5,Miami Grand Prix,Miami International Autodrome,7,GAS,AlphaTauri,1:30.779,1:30.128,1:29.690
+2022,5,Miami Grand Prix,Miami International Autodrome,8,NOR,McLaren,1:30.761,1:29.634,1:29.750
+2022,5,Miami Grand Prix,Miami International Autodrome,9,TSU,AlphaTauri,1:30.485,1:30.031,1:29.932
+2022,5,Miami Grand Prix,Miami International Autodrome,10,STR,Aston Martin,1:30.441,1:29.996,1:30.676
+2022,5,Miami Grand Prix,Miami International Autodrome,11,ALO,Alpine F1 Team,1:30.407,1:30.160,
+2022,5,Miami Grand Prix,Miami International Autodrome,12,RUS,Mercedes,1:30.490,1:30.173,
+2022,5,Miami Grand Prix,Miami International Autodrome,13,VET,Aston Martin,1:30.677,1:30.214,
+2022,5,Miami Grand Prix,Miami International Autodrome,14,RIC,McLaren,1:30.583,1:30.310,
+2022,5,Miami Grand Prix,Miami International Autodrome,15,MSC,Haas F1 Team,1:30.645,1:30.423,
+2022,5,Miami Grand Prix,Miami International Autodrome,16,MAG,Haas F1 Team,1:30.975,,
+2022,5,Miami Grand Prix,Miami International Autodrome,17,ZHO,Alfa Romeo,1:31.020,,
+2022,5,Miami Grand Prix,Miami International Autodrome,18,ALB,Williams,1:31.266,,
+2022,5,Miami Grand Prix,Miami International Autodrome,19,LAT,Williams,1:31.325,,
+2022,5,Miami Grand Prix,Miami International Autodrome,20,OCO,Alpine F1 Team,,,

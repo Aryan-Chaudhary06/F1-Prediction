@@ -1,0 +1,101 @@
+year,round,gp_name,circuit,driver,constructor,grid,position,points,status,laps
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,NOR,McLaren,1,1,25.0,Finished,57
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,VER,Red Bull,3,2,18.0,Finished,57
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,RUS,Mercedes,4,3,15.0,Finished,57
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,ANT,Mercedes,16,4,12.0,Finished,57
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,ALB,Williams,6,5,10.0,Finished,57
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,STR,Aston Martin,13,6,8.0,Finished,57
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,HUL,Sauber,17,7,6.0,Finished,57
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,LEC,Ferrari,7,8,4.0,Finished,57
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,PIA,McLaren,2,9,2.0,Finished,57
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,HAM,Ferrari,8,10,1.0,Finished,57
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,GAS,Alpine F1 Team,9,11,0.0,Finished,57
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,TSU,RB F1 Team,5,12,0.0,Finished,57
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,OCO,Haas F1 Team,19,13,0.0,Finished,57
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,BEA,Haas F1 Team,20,14,0.0,Finished,57
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,LAW,Red Bull,18,15,0.0,Retired,46
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,BOR,Sauber,15,16,0.0,Retired,45
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,ALO,Aston Martin,12,17,0.0,Retired,32
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,SAI,Williams,10,18,0.0,Retired,0
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,DOO,Alpine F1 Team,14,19,0.0,Retired,0
+2025,1,Australian Grand Prix,Albert Park Grand Prix Circuit,HAD,RB F1 Team,11,20,0.0,Retired,0
+2025,2,Chinese Grand Prix,Shanghai International Circuit,PIA,McLaren,1,1,25.0,Finished,56
+2025,2,Chinese Grand Prix,Shanghai International Circuit,NOR,McLaren,3,2,18.0,Finished,56
+2025,2,Chinese Grand Prix,Shanghai International Circuit,RUS,Mercedes,2,3,15.0,Finished,56
+2025,2,Chinese Grand Prix,Shanghai International Circuit,VER,Red Bull,4,4,12.0,Finished,56
+2025,2,Chinese Grand Prix,Shanghai International Circuit,OCO,Haas F1 Team,11,5,10.0,Finished,56
+2025,2,Chinese Grand Prix,Shanghai International Circuit,ANT,Mercedes,8,6,8.0,Finished,56
+2025,2,Chinese Grand Prix,Shanghai International Circuit,ALB,Williams,10,7,6.0,Finished,56
+2025,2,Chinese Grand Prix,Shanghai International Circuit,BEA,Haas F1 Team,17,8,4.0,Finished,56
+2025,2,Chinese Grand Prix,Shanghai International Circuit,STR,Aston Martin,14,9,2.0,Finished,56
+2025,2,Chinese Grand Prix,Shanghai International Circuit,SAI,Williams,15,10,1.0,Finished,56
+2025,2,Chinese Grand Prix,Shanghai International Circuit,HAD,RB F1 Team,7,11,0.0,Finished,56
+2025,2,Chinese Grand Prix,Shanghai International Circuit,LAW,Red Bull,20,12,0.0,Finished,56
+2025,2,Chinese Grand Prix,Shanghai International Circuit,DOO,Alpine F1 Team,18,13,0.0,Finished,56
+2025,2,Chinese Grand Prix,Shanghai International Circuit,BOR,Sauber,19,14,0.0,Lapped,55
+2025,2,Chinese Grand Prix,Shanghai International Circuit,HUL,Sauber,12,15,0.0,Lapped,55
+2025,2,Chinese Grand Prix,Shanghai International Circuit,TSU,RB F1 Team,9,16,0.0,Lapped,55
+2025,2,Chinese Grand Prix,Shanghai International Circuit,ALO,Aston Martin,13,17,0.0,Retired,4
+2025,2,Chinese Grand Prix,Shanghai International Circuit,LEC,Ferrari,6,18,0.0,Disqualified,0
+2025,2,Chinese Grand Prix,Shanghai International Circuit,HAM,Ferrari,5,19,0.0,Disqualified,0
+2025,2,Chinese Grand Prix,Shanghai International Circuit,GAS,Alpine F1 Team,16,20,0.0,Disqualified,0
+2025,3,Japanese Grand Prix,Suzuka Circuit,VER,Red Bull,1,1,25.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,NOR,McLaren,2,2,18.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,PIA,McLaren,3,3,15.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,LEC,Ferrari,4,4,12.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,RUS,Mercedes,5,5,10.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,ANT,Mercedes,6,6,8.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,HAM,Ferrari,8,7,6.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,HAD,RB F1 Team,7,8,4.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,ALB,Williams,9,9,2.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,BEA,Haas F1 Team,10,10,1.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,ALO,Aston Martin,12,11,0.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,TSU,Red Bull,14,12,0.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,GAS,Alpine F1 Team,11,13,0.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,SAI,Williams,15,14,0.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,DOO,Alpine F1 Team,19,15,0.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,HUL,Sauber,16,16,0.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,LAW,RB F1 Team,13,17,0.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,OCO,Haas F1 Team,18,18,0.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,BOR,Sauber,17,19,0.0,Finished,53
+2025,3,Japanese Grand Prix,Suzuka Circuit,STR,Aston Martin,20,20,0.0,Lapped,52
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,PIA,McLaren,1,1,25.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,RUS,Mercedes,3,2,18.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,NOR,McLaren,6,3,15.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,LEC,Ferrari,2,4,12.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,HAM,Ferrari,9,5,10.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,VER,Red Bull,7,6,8.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,GAS,Alpine F1 Team,4,7,6.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,OCO,Haas F1 Team,14,8,4.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,TSU,Red Bull,10,9,2.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,BEA,Haas F1 Team,20,10,1.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,ANT,Mercedes,5,11,0.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,ALB,Williams,15,12,0.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,HAD,RB F1 Team,12,13,0.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,DOO,Alpine F1 Team,11,14,0.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,ALO,Aston Martin,13,15,0.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,LAW,RB F1 Team,17,16,0.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,STR,Aston Martin,19,17,0.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,BOR,Sauber,18,18,0.0,Finished,57
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,SAI,Williams,8,19,0.0,Retired,45
+2025,4,Bahrain Grand Prix,Bahrain International Circuit,HUL,Sauber,16,20,0.0,Disqualified,0
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,PIA,McLaren,2,1,25.0,Finished,50
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,VER,Red Bull,1,2,18.0,Finished,50
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,LEC,Ferrari,4,3,15.0,Finished,50
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,NOR,McLaren,10,4,12.0,Finished,50
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,RUS,Mercedes,3,5,10.0,Finished,50
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,ANT,Mercedes,5,6,8.0,Finished,50
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,HAM,Ferrari,7,7,6.0,Finished,50
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,SAI,Williams,6,8,4.0,Finished,50
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,ALB,Williams,11,9,2.0,Finished,50
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,HAD,RB F1 Team,14,10,1.0,Finished,50
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,ALO,Aston Martin,13,11,0.0,Finished,50
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,LAW,RB F1 Team,12,12,0.0,Finished,50
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,BEA,Haas F1 Team,15,13,0.0,Finished,50
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,OCO,Haas F1 Team,19,14,0.0,Finished,50
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,HUL,Sauber,18,15,0.0,Lapped,49
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,STR,Aston Martin,16,16,0.0,Lapped,49
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,DOO,Alpine F1 Team,17,17,0.0,Lapped,49
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,BOR,Sauber,20,18,0.0,Lapped,49
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,TSU,Red Bull,8,19,0.0,Retired,1
+2025,5,Saudi Arabian Grand Prix,Jeddah Corniche Circuit,GAS,Alpine F1 Team,9,20,0.0,Retired,0

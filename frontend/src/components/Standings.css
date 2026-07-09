@@ -1,0 +1,273 @@
+.stand-page { background: var(--black); min-height: 100vh; padding-bottom: 6rem; }
+
+/* ── Hero ─────────────────────────────────────────────────────────────── */
+.stand-hero {
+  position: relative; overflow: hidden;
+  padding: 3rem 3rem 2.5rem; border-bottom: 1px solid var(--line);
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 20rem;
+}
+.stand-hero-text { position: relative; z-index: 3; }
+.stand-hero-label {
+  font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.2em;
+  color: var(--gray); text-transform: uppercase; margin-bottom: 1rem;
+  display: flex; align-items: center; gap: 0.6rem;
+}
+.stand-hero-live {
+  color: var(--red); border: 1px solid var(--red); padding: 0.2rem 0.5rem;
+  font-size: 0.55rem; letter-spacing: 0.14em;
+}
+.stand-hero-heading {
+  font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(2.6rem, 5vw, 4.6rem); line-height: 0.9;
+  text-transform: uppercase; letter-spacing: -0.02em;
+}
+.stand-hero-heading .accent { color: var(--red); }
+.stand-hero-sub {
+  font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray);
+  letter-spacing: 0.05em; margin-top: 1rem;
+}
+.stand-hero-car {
+  position: absolute; right: 2rem; top: 50%; transform: translateY(-50%);
+  opacity: 0.5; z-index: 1; pointer-events: none;
+}
+.stand-hero-car::after {
+  content: ""; position: absolute; inset: -40% -60%;
+  background: radial-gradient(ellipse at center, transparent 0%, var(--black) 75%);
+}
+
+/* ── Section shells ───────────────────────────────────────────────────── */
+.stand-section { padding: 3rem; border-bottom: 1px solid var(--line); }
+.stand-section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.4rem; }
+.stand-section-label {
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.2em;
+  color: var(--red); text-transform: uppercase; display: flex; align-items: center; gap: 0.5rem;
+}
+.stand-section-label::before { content: ""; width: 3px; height: 0.8em; background: var(--red); display: inline-block; }
+.stand-view-full {
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.08em;
+  color: var(--gray); text-transform: uppercase; background: none; border: none; cursor: pointer;
+}
+.stand-view-full:hover { color: var(--white); }
+
+/* ── Leader card ──────────────────────────────────────────────────────── */
+.stand-leader-card {
+  display: flex; align-items: center; gap: 2.5rem;
+  border: 1px solid var(--line); background: var(--black-2);
+  padding: 2rem 2.5rem; margin: 0 3rem; flex-wrap: wrap;
+}
+.stand-leader-tag {
+  font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.18em;
+  color: var(--lime); text-transform: uppercase; position: absolute;
+}
+.stand-leader-car-wrap { position: relative; flex-shrink: 0; }
+.stand-leader-info { flex: 1; min-width: 200px; }
+.stand-leader-name {
+  font-family: var(--font-display); font-weight: 800; font-size: 1.8rem;
+  text-transform: uppercase; letter-spacing: -0.01em; line-height: 1.05;
+}
+.stand-leader-team { font-family: var(--font-mono); font-size: 0.72rem; color: var(--gray); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 0.3rem; }
+.stand-leader-points { text-align: right; flex-shrink: 0; }
+.stand-leader-points-num { font-family: var(--font-display); font-weight: 900; font-size: 3rem; line-height: 1; }
+.stand-leader-points-unit { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); letter-spacing: 0.08em; margin-left: 0.3rem; }
+.stand-leader-gap { font-family: var(--font-mono); font-size: 0.7rem; color: var(--lime); margin-top: 0.4rem; }
+.stand-leader-stats { display: flex; gap: 1.6rem; padding-left: 2rem; border-left: 1px solid var(--line); flex-shrink: 0; }
+.stand-leader-stat { text-align: center; }
+.stand-leader-stat-num { font-family: var(--font-display); font-weight: 800; font-size: 1.4rem; }
+.stand-leader-stat-label { font-family: var(--font-mono); font-size: 0.52rem; color: var(--gray-dim); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.2rem; }
+
+/* ── Podium cards ─────────────────────────────────────────────────────── */
+.stand-podium-row { display: flex; align-items: flex-end; justify-content: center; gap: 1.4rem; padding: 0 3rem; }
+.stand-podium-card {
+  flex: 1; max-width: 22rem; border: 1px solid var(--line); background: var(--black-2);
+  padding: 1.6rem; text-align: center; position: relative;
+}
+.stand-podium-card--leader { border-color: var(--lime); background: linear-gradient(180deg, rgba(200,255,0,0.06), transparent); }
+.stand-podium-pos-badge {
+  position: absolute; top: 1rem; left: 1rem;
+  font-family: var(--font-display); font-weight: 900; font-size: 1.4rem; color: var(--gray-dim);
+}
+.stand-podium-card--leader .stand-podium-pos-badge { color: var(--lime); }
+.stand-podium-gap { font-family: var(--font-mono); font-size: 0.6rem; color: var(--gray); position: absolute; top: 1rem; right: 1rem; }
+.stand-podium-name { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; text-transform: uppercase; margin-top: 1rem; }
+.stand-podium-team { font-family: var(--font-mono); font-size: 0.6rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.6rem; }
+.stand-podium-pts { font-family: var(--font-display); font-weight: 900; font-size: 1.6rem; }
+.stand-podium-pts-unit { font-family: var(--font-mono); font-size: 0.6rem; color: var(--gray); }
+.stand-podium-leader-chip {
+  margin-top: 0.6rem; display: inline-block; font-family: var(--font-mono); font-size: 0.55rem;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--black); background: var(--lime);
+  padding: 0.2rem 0.6rem;
+}
+
+/* ── Two-column standings lists ──────────────────────────────────────── */
+.stand-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; padding: 0 3rem; }
+@media (max-width: 900px) { .stand-two-col { grid-template-columns: 1fr; } }
+
+.stand-list { border: 1px solid var(--line); }
+.stand-list-row {
+  display: grid; grid-template-columns: 1.6rem 44px 1fr auto auto; align-items: center;
+  gap: 0.9rem; padding: 0.65rem 1rem; border-bottom: 1px solid var(--line);
+}
+.stand-list-row:last-child { border-bottom: none; }
+.stand-list-pos { font-family: var(--font-display); font-weight: 800; font-size: 0.95rem; color: var(--gray); }
+.stand-list-name-wrap { min-width: 0; }
+.stand-list-name { font-family: var(--font-display); font-weight: 600; font-size: 0.88rem; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.stand-list-team { font-family: var(--font-mono); font-size: 0.56rem; color: var(--gray); text-transform: uppercase; }
+.stand-list-pts { font-family: var(--font-mono); font-size: 0.8rem; color: var(--white); text-align: right; }
+.stand-list-gap { font-family: var(--font-mono); font-size: 0.62rem; color: var(--gray); text-align: right; min-width: 3.2rem; }
+.stand-list-trend { font-size: 0.7rem; width: 1rem; text-align: center; }
+.stand-list-trend.up { color: var(--lime); }
+.stand-list-trend.down { color: var(--red); }
+.stand-list-trend.flat { color: var(--gray-dim); }
+
+/* Constructor cards (bar instead of row) */
+.stand-con-row {
+  display: grid; grid-template-columns: 1.6rem 44px 1fr auto; align-items: center;
+  gap: 0.9rem; padding: 0.7rem 1rem; border-bottom: 1px solid var(--line);
+}
+.stand-con-row:last-child { border-bottom: none; }
+.stand-con-name-wrap { min-width: 0; }
+.stand-con-name { font-family: var(--font-display); font-weight: 600; font-size: 0.88rem; text-transform: uppercase; }
+.stand-con-bar-track { grid-column: 1 / -1; height: 5px; background: var(--black-2); margin-top: 0.5rem; }
+.stand-con-bar-fill { height: 100%; }
+.stand-con-pts { font-family: var(--font-mono); font-size: 0.8rem; text-align: right; }
+
+/* ── Live stat strip ──────────────────────────────────────────────────── */
+.stand-stat-strip { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin: 0 3rem; }
+@media (max-width: 900px) { .stand-stat-strip { grid-template-columns: repeat(2, 1fr); } }
+.stand-stat-card { background: var(--black); padding: 1.4rem 1.2rem; }
+.stand-stat-label { font-family: var(--font-mono); font-size: 0.55rem; letter-spacing: 0.1em; color: var(--gray); text-transform: uppercase; margin-bottom: 0.6rem; }
+.stand-stat-value { font-family: var(--font-display); font-weight: 800; font-size: 1.8rem; }
+.stand-stat-value.red { color: var(--red); }
+.stand-stat-value.lime { color: var(--lime); }
+.stand-stat-sub { font-family: var(--font-mono); font-size: 0.62rem; color: var(--gray); margin-top: 0.3rem; text-transform: uppercase; }
+.stand-stat-arrow { font-size: 0.9em; margin-right: 0.2rem; }
+
+/* ── Season progress timeline ─────────────────────────────────────────── */
+.stand-timeline { display: flex; align-items: center; gap: 0; overflow-x: auto; padding: 1rem 0; }
+.stand-timeline-item { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; width: 2.6rem; position: relative; cursor: pointer; }
+.stand-timeline-line { position: absolute; top: 6px; left: -50%; width: 100%; height: 1px; background: var(--line); z-index: 0; }
+.stand-timeline-item:first-child .stand-timeline-line { display: none; }
+.stand-timeline-dot { width: 13px; height: 13px; border-radius: 50%; border: 1.5px solid var(--gray-dim); background: var(--black); z-index: 1; }
+.stand-timeline-item.done .stand-timeline-dot { background: var(--red); border-color: var(--red); }
+.stand-timeline-item.current .stand-timeline-dot { background: var(--lime); border-color: var(--lime); box-shadow: 0 0 8px rgba(200,255,0,0.6); }
+.stand-timeline-code { font-family: var(--font-mono); font-size: 0.5rem; color: var(--gray-dim); margin-top: 0.4rem; text-transform: uppercase; }
+.stand-timeline-tooltip {
+  position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+  background: var(--black-2); border: 1px solid var(--line); padding: 0.5rem 0.8rem;
+  font-family: var(--font-mono); font-size: 0.6rem; white-space: nowrap; z-index: 10;
+}
+
+/* ── Championship prediction (cinematic) ──────────────────────────────── */
+.stand-predict-card {
+  position: relative; overflow: hidden;
+  display: flex; align-items: center; justify-content: space-between;
+  border: 1px solid var(--line); background: var(--black-2);
+  padding: 3rem; margin: 0 3rem; gap: 2rem; flex-wrap: wrap;
+}
+.stand-predict-label { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.2em; color: var(--gray); text-transform: uppercase; margin-bottom: 1rem; }
+.stand-predict-name { font-family: var(--font-display); font-weight: 900; font-size: clamp(2.2rem, 4vw, 3.6rem); text-transform: uppercase; line-height: 0.95; }
+.stand-predict-sub { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; text-transform: uppercase; color: var(--gray); margin-top: 0.3rem; }
+.stand-predict-pct { font-family: var(--font-display); font-weight: 900; font-size: clamp(3rem, 6vw, 5rem); color: var(--red); line-height: 1; margin-top: 0.6rem; }
+.stand-predict-pct-label { font-family: var(--font-mono); font-size: 0.6rem; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; }
+
+/* ── Probability lists (WDC / WCC) with dot/pip meters ───────────────── */
+.stand-prob-row { display: grid; grid-template-columns: 1.4rem 1fr auto; align-items: center; gap: 0.8rem; padding: 0.6rem 1rem; border-bottom: 1px solid var(--line); }
+.stand-prob-row:last-child { border-bottom: none; }
+.stand-prob-pos { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); }
+.stand-prob-name { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; }
+.stand-prob-pips { display: flex; gap: 2px; }
+.stand-prob-pip { width: 5px; height: 5px; border-radius: 50%; background: var(--line); }
+.stand-prob-pip.filled { background: var(--red); }
+.stand-prob-pct { font-family: var(--font-mono); font-size: 0.75rem; color: var(--white); text-align: right; min-width: 3.4rem; }
+
+.stand-approx-note {
+  font-family: var(--font-mono); font-size: 0.58rem; color: var(--gray-dim);
+  letter-spacing: 0.03em; margin-top: 0.6rem; font-style: italic;
+}
+
+/* ── Projected final standings ────────────────────────────────────────── */
+.stand-proj-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; }
+@media (max-width: 900px) { .stand-proj-cols { grid-template-columns: 1fr; } }
+.stand-proj-row { display: grid; grid-template-columns: 1.4rem 1fr auto auto; align-items: center; gap: 0.8rem; padding: 0.55rem 0; border-bottom: 1px solid var(--line); }
+.stand-proj-pos { font-family: var(--font-mono); font-size: 0.68rem; color: var(--gray-dim); }
+.stand-proj-name { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; }
+.stand-proj-team { font-family: var(--font-mono); font-size: 0.56rem; color: var(--gray); }
+.stand-proj-pts { font-family: var(--font-mono); font-size: 0.72rem; text-align: right; }
+.stand-proj-conf { font-family: var(--font-mono); font-size: 0.55rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.15rem 0.5rem; text-align: center; }
+.stand-proj-conf.high { color: var(--lime); border: 1px solid var(--lime); }
+.stand-proj-conf.medium { color: #f5a623; border: 1px solid #f5a623; }
+.stand-proj-conf.low { color: var(--gray); border: 1px solid var(--gray-dim); }
+
+.stand-loading, .stand-error {
+  font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); letter-spacing: 0.06em;
+  text-transform: uppercase; padding: 2rem 3rem;
+}
+.stand-error { color: var(--red); }
+
+/* ── Championship forecast controls ──────────────────────────────────── */
+.stand-forecast-sub { font-family: var(--font-mono); font-size: 0.68rem; color: var(--gray); margin-bottom: 1.6rem; }
+.stand-forecast-controls {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem;
+  padding: 1.4rem; border: 1px solid var(--line); background: var(--black-2); margin-bottom: 1.2rem;
+}
+@media (max-width: 980px) { .stand-forecast-controls { grid-template-columns: 1fr 1fr; } }
+
+.stand-field-label {
+  font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.1em; color: var(--gray);
+  text-transform: uppercase; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.3rem;
+}
+.stand-field-note { color: var(--gray-dim); text-transform: none; letter-spacing: 0; }
+
+.stand-forecast-readout { font-family: var(--font-display); font-weight: 800; font-size: 1.6rem; }
+.stand-forecast-readout-unit { font-size: 1rem; color: var(--gray); font-weight: 400; }
+
+.stand-forecast-select {
+  width: 100%; font-family: var(--font-mono); font-size: 0.72rem;
+  color: var(--white); background: var(--black); border: 1px solid var(--gray-dim);
+  padding: 0.5rem 0.7rem;
+}
+
+.stand-forecast-slider-row { display: flex; align-items: center; gap: 0.7rem; }
+.stand-forecast-slider-row input[type="range"] { flex: 1; accent-color: var(--red); }
+.stand-forecast-slider-val { font-family: var(--font-mono); font-size: 0.72rem; color: var(--white); min-width: 2.6rem; text-align: right; }
+
+.stand-forecast-checkbox {
+  display: flex; align-items: center; gap: 0.6rem;
+  font-family: var(--font-mono); font-size: 0.72rem; color: var(--white);
+  margin-bottom: 1.4rem; cursor: pointer;
+}
+.stand-forecast-checkbox input[type="checkbox"] { accent-color: var(--red); width: 1rem; height: 1rem; }
+
+.stand-forecast-run-btn {
+  font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--white); background: var(--red);
+  border: none; padding: 0.85rem 1.8rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.stand-forecast-run-btn:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 4px 20px rgba(232,0,45,0.3); }
+.stand-forecast-run-btn:disabled { opacity: 0.5; cursor: default; }
+
+/* ── Info tooltip ("?" widget) ─────────────────────────────────────────── */
+.stand-info-wrap { position: relative; display: inline-flex; }
+.stand-info-btn {
+  width: 1rem; height: 1rem; border-radius: 50%;
+  border: 1px solid var(--gray-dim); background: transparent; color: var(--gray);
+  font-family: var(--font-mono); font-size: 0.56rem; line-height: 1;
+  cursor: pointer; padding: 0;
+  transition: border-color 0.2s, color 0.2s;
+}
+.stand-info-btn:hover { border-color: var(--red); color: var(--red); }
+.stand-info-panel {
+  position: absolute; z-index: 20; top: 1.4rem; left: 0;
+  width: min(22rem, 75vw); background: var(--black); border: 1px solid #e8002d44;
+  padding: 1rem 1.2rem; box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  text-transform: none; letter-spacing: normal;
+}
+.stand-info-panel p { font-size: 0.72rem; color: var(--gray); font-weight: 300; line-height: 1.65; margin: 0; }
+
+.stand-footer-note {
+  text-align: center; font-family: var(--font-mono); font-size: 0.6rem; color: var(--gray-dim);
+  padding-top: 2rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+}
+.stand-footer-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--lime); }
