@@ -208,7 +208,7 @@ function RaceCard({ race, index, year }) {
 
       <div className="rc-visual">
         {!isPast ? (
-          <CircuitMap circuitName={race.circuit} mini />
+          isNearView ? <CircuitMap circuitName={race.circuit} mini /> : <div className="rc-podium-loading">Loading circuit…</div>
         ) : podium === null ? (
           <div className="rc-podium-loading">Loading results…</div>
         ) : podium.length === 0 ? (
