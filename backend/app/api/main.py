@@ -1,16 +1,9 @@
 """
 RaceMind AI — FastAPI layer
-
-This file does NOT reimplement any ML or data logic. Every route is a thin
-wrapper that calls your existing functions in app/data and app/models
-exactly the way frontend/app.py (Streamlit) already does, and returns the
-result as JSON instead of rendering it with st.dataframe / st.plotly_chart.
-
 Run locally:
     uvicorn app.api.main:app --reload --port 8000
 
-Then visit http://localhost:8000/docs for interactive Swagger UI — useful
-for testing every endpoint before the React frontend exists at all.
+Then visit http://localhost:8000/docs 
 """
 
 import os
@@ -23,8 +16,8 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import ORJSONResponse
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 
-# Make `app.*` imports work the same way frontend/app.py does
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../.."))
 
 from app.data.ergast_client import (
@@ -62,10 +55,6 @@ from app.models.season_simulator import (
     build_driver_dnf_rates,
 )
 
-# Qualifying predictor — separate XGBRanker model from the race predictor
-# above, trained on qualifying (not race) results. Wrapped the same
-# defensive way as the DRIVERS_2026 / explainability imports below so a
-# missing/broken module doesn't take down every other route.
 try:
     from app.data.ergast_client import get_cached_historical_qualifying
     from app.models.qualifying_predictor import (
@@ -87,10 +76,7 @@ except Exception as e:
     apply_rookie_fallback = None
     print(f"[startup warning] could not import qualifying predictor modules: {e}")
 
-# These two modules weren't available when this file was written. Imports
-# are wrapped so the API still boots and every OTHER route still works even
-# if drivers_2026.py or explainability.py have a different shape than
-# assumed here — see the two NOTE blocks below for what to check.
+
 try:
     from app.data.drivers_2026 import DRIVERS_2026
 except Exception as e:
@@ -111,16 +97,7 @@ except Exception as e:
     print(f"[startup warning] could not import build_driver_dna: {e}")
 
 
-# ── App setup ─────────────────────────────────────────────────────────────
-# default_response_class=ORJSONResponse matters here, not just for speed:
-# FastAPI's default json.dumps()-based encoder raises ValueError on NaN/Inf
-# floats (Python's stdlib json is strict-JSON-compliant and NaN isn't valid
-# JSON). pandas DataFrames routinely contain NaN for missing values (e.g.
-# TyreLife/Stint/SpeedI1 gaps in FastF1 lap data), and df.to_dict() leaves
-# those NaNs as actual float('nan') values rather than None. orjson handles
-# this by serializing NaN/Inf as `null` automatically, so every route that
-# returns DataFrame data is protected at once instead of needing a
-# per-route .fillna(None) or .where(pd.notnull(...), None) call.
+
 app = FastAPI(
     title="RaceMind AI API",
     description="F1 ML predictions, standings, and championship simulation.",
@@ -128,13 +105,22 @@ app = FastAPI(
     default_response_class=ORJSONResponse,
 )
 
-# NOTE: replace with your real Vercel domain once deployed. Keep both the
-# production and localhost origins — localhost:5173 is Vite's default dev
-# port, localhost:3000 covers CRA-style setups if you ever use one.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://race-mind-ai-f1-intelligence-platfo.vercel.app",   # your production Vercel URL
+        "https://YOUR-CUSTOM-DOMAIN.com",           # if/when you add a custom domain
+    ],
+    allow_origin_regex=r"https://.*\.vercel\.app",  # covers PR preview deployments too
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://localhost:3000",
-    "https://racemindai.vercel.app",  # TODO: confirm/replace with actual domain
+    "https://race-mind-ai-f1-intelligence-platfo.vercel.app",  
 ]
 
 app.add_middleware(
@@ -147,9 +133,7 @@ app.add_middleware(
 
 TRAIN_YEAR_START, TRAIN_YEAR_END = 2022, 2026
 
-# In-memory model cache so every request doesn't reload from disk.
-# Mirrors st.session_state["model"] in the Streamlit app — lives for the
-# lifetime of the process, reset on redeploy/restart.
+
 _model_cache = {"model": None}
 
 

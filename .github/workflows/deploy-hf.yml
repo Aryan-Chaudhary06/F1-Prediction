@@ -1,39 +1,39 @@
-name: Deploy to Hugging Face
+name: Deploy backend to Hugging Face Spaces
 
 on:
   push:
     branches: [main]
+    paths:
+      - "backend/**"
+      - ".github/workflows/deploy-hf.yml"
+  workflow_dispatch: {}   # lets you trigger a redeploy manually from the Actions tab
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout full repo
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          lfs: true
 
-      - name: Push to Hugging Face
+      - name: Push backend/ subfolder to the Hugging Face Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_SPACE: Megmez/RaceMindAI
         run: |
-          git config --global user.email "ci@github.com"
-          git config --global user.name "GitHub CI"
-          
-          # Clone HF Space
-          git clone https://Megmez:$HF_TOKEN@huggingface.co/spaces/Megmez/RaceMindAI hf-space
-          
-          # Copy repo files excluding cache and model
-          rsync -av --exclude='.git' \
-                    --exclude='data/cache/' \
-                    --exclude='data/race_model.pkl' \
-                    --exclude='*.ff1pkl' \
-                    --exclude='*.sqlite' \
-                    --exclude='*.pkl' \
-                    . hf-space/
-          
-          # Push to HF
-          cd hf-space
-          git add .
-          git diff --staged --quiet || git commit -m "Deploy from GitHub: ${{ github.sha }}"
-          git push
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+
+          # Split just the backend/ folder out into its own history so the
+          # HF Space's git repo only ever sees backend/'s contents at its
+          # root (Spaces don't support "deploy from a subdirectory" natively).
+          git subtree split --prefix=backend -b hf-deploy-branch
+
+          # Push that branch's history to the Space, rewriting it onto the
+          # Space's main branch. --force is safe here because the Space's
+          # git history is just a deployment target, not something anyone
+          # collaborates on directly.
+          git push --force \
+            https://Megmez:${HF_TOKEN}@huggingface.co/spaces/${HF_SPACE} \
+            hf-deploy-branch:main
