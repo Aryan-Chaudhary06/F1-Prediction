@@ -32,7 +32,7 @@
 .race-section-label::before { content: ""; width: 3px; height: 0.8em; background: #E10600; display: inline-block; }
 .race-section-desc { font-family: var(--font-mono); font-size: 0.68rem; color: #888; margin-bottom: 1.2rem; }
 
-.race-card {
+.race-panel-card {
   background: #101010; border: 1px solid #262626; border-radius: 16px;
   padding: 1.8rem 2rem; box-shadow: 0 8px 24px rgba(0,0,0,0.3);
   width: 100%; box-sizing: border-box;

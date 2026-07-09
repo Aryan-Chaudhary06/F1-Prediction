@@ -145,7 +145,7 @@ export default function RaceAnalysis() {
 
       {/* ── Session selection ────────────────────────────────────────── */}
       <section className="race-section">
-        <motion.div className="race-card race-session-card" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
+        <motion.div className="race-panel-card race-session-card" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
           <div className="race-session-fields">
             <div className="race-field">
               <div className="race-field-label">Grand Prix</div>
@@ -201,7 +201,7 @@ export default function RaceAnalysis() {
           {/* ── Lap Time Evolution ───────────────────────────────────── */}
           <section className="race-section">
             <div className="race-section-label">Lap Time Evolution</div>
-            <motion.div className="race-card" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
+            <motion.div className="race-panel-card" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
               <div className="race-pills">
                 {selectedDrivers.map((code) => (
                   <span key={code} className="race-pill" style={{ "--pill-color": driverColors[code] }}>
@@ -232,7 +232,7 @@ export default function RaceAnalysis() {
           <section className="race-section">
             <div className="race-section-label">Tire Strategy</div>
             <p className="race-section-desc">Which compound each driver ran, lap by lap.</p>
-            <motion.div className="race-card" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
+            <motion.div className="race-panel-card" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
               <div className="race-chart-wrap">
                 <TireStrategyChart laps={laps} drivers={availableDrivers} />
               </div>
