@@ -1,5 +1,5 @@
 {
-  "trained_at": "2026-07-03T20:14:49.540483",
+  "trained_at": "2026-07-14T08:19:36.148991",
   "years_trained_on": [
     2022,
     2023,
@@ -7,10 +7,10 @@
     2025,
     2026
   ],
-  "sessions_trained_on": 24,
-  "rows_trained_on": 432,
-  "pole_accuracy": 0.0,
-  "top3_accuracy": 0.8,
+  "sessions_trained_on": 99,
+  "rows_trained_on": 1965,
+  "pole_accuracy": 0.25,
+  "top3_accuracy": 0.6,
   "era_weighting_used": true,
   "era_weights": {
     "2022": 0.6,

@@ -133,4 +133,4 @@ racemind-ai/
 - **[OpenF1 API](https://openf1.org)** — Live session data
 - **[Jolpica API](https://jolpi.ca)** — Standings, schedules, historical qualifying results (Ergast replacement)
 
----
+--- 

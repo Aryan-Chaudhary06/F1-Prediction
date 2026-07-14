@@ -1,24 +1,3 @@
-"""
-A NOTE ON ACCURACY
-───────────────────
-Codes for long-tenured drivers (VER, HAM, LEC, NOR, ALO, etc.) are
-the standard, stable Ergast codes and are safe to rely on.
-
-Codes for 2025/2026 rookies and mid-career drivers who joined after
-this module was written (Antonelli, Hadjar, Lindblad, Bortoleto,
-Colapinto) are this module's BEST GUESS at the convention Ergast/
-Jolpica uses (first 3 letters of surname, upper-cased), not a
-confirmed value pulled from the live API. Ergast occasionally
-deviates from that pattern (e.g. shared surnames get disambiguated).
-
-Treat `ERGAST_CODE_CONFIRMED` below as the source of truth for which
-codes are verified vs. guessed. Before relying on this in production,
-hit `https://api.jolpi.ca/ergast/f1/2026/drivers.json?limit=100` once
-and confirm/correct the guessed codes — `verify_codes_against_api()`
-at the bottom of this file does exactly that and will print any
-mismatches.
-"""
-
 import pandas as pd
 
 DRIVERS_2026 = [
@@ -26,9 +5,9 @@ DRIVERS_2026 = [
     {"name": "Kimi Antonelli",    "code": "ANT", "team": "Mercedes",      "team_color": "#00D2BE", "number": 12},
     {"name": "Charles Leclerc",   "code": "LEC", "team": "Ferrari",       "team_color": "#DC143C", "number": 16},
     {"name": "Lewis Hamilton",    "code": "HAM", "team": "Ferrari",       "team_color": "#DC143C", "number": 44},
-    {"name": "Lando Norris",      "code": "NOR", "team": "McLaren",       "team_color": "#FF8000", "number": 4},
+    {"name": "Lando Norris",      "code": "NOR", "team": "McLaren",       "team_color": "#FF8000", "number": 1},
     {"name": "Oscar Piastri",     "code": "PIA", "team": "McLaren",       "team_color": "#FF8000", "number": 81},
-    {"name": "Max Verstappen",    "code": "VER", "team": "Red Bull",      "team_color": "#3671C6", "number": 1},
+    {"name": "Max Verstappen",    "code": "VER", "team": "Red Bull",      "team_color": "#3671C6", "number": 3},
     {"name": "Isack Hadjar",      "code": "HAD", "team": "Red Bull",      "team_color": "#3671C6", "number": 6},
     {"name": "Pierre Gasly",      "code": "GAS", "team": "Alpine",        "team_color": "#0090FF", "number": 10},
     {"name": "Franco Colapinto",  "code": "COL", "team": "Alpine",        "team_color": "#0090FF", "number": 43},
@@ -46,17 +25,23 @@ DRIVERS_2026 = [
     {"name": "Valtteri Bottas",   "code": "BOT", "team": "Cadillac",      "team_color": "#9C8E55", "number": 77},
 ]
 
-# Codes verified as stable, long-standing Ergast convention (safe to trust).
-# Anything for a driver NOT in this set is a guess — see module docstring.
 ERGAST_CODE_CONFIRMED = {
     "RUS", "LEC", "HAM", "NOR", "PIA", "VER", "GAS",
     "LAW", "OCO", "SAI", "ALB", "HUL", "ALO", "STR", "PER", "BOT",
 }
 
-# Drivers with no, or very little, prior F1 race history as of the
-# 2026 season. Used to show a rookie badge and to trigger fallback
-# logic in feature engineering (new-constructor / no-history handling).
-ROOKIE_2026 = {"Kimi Antonelli", "Isack Hadjar", "Gabriel Bortoleto", "Arvid Lindblad"}
+# Drivers with no prior F1 race history as of the 2026 season. Used to
+# show a rookie badge and to trigger fallback logic in feature engineering
+# (no-history handling for rolling-form / circuit-history features).
+#
+# Arvid Lindblad is the ONLY true rookie on the 2026 grid — Antonelli,
+# Hadjar, and Bortoleto all debuted in 2025 and have a full season of real
+# rolling-form data available by 2026, so they must NOT be in this set:
+# routing them through the rookie fallback would discard real, informative
+# history in favor of a field-average placeholder. (Previously this set
+# incorrectly included all four — fixed after a data fact-check; see
+# RaceMindAI_Audit_Phases1-5.md, Phase 2.5.1.)
+ROOKIE_2026 = {"Arvid Lindblad"}
 
 # Brand-new constructors with no historical pace/DNF data before 2026.
 NEW_CONSTRUCTORS_2026 = {"Audi", "Cadillac"}

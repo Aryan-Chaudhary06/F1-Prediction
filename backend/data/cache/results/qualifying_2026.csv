@@ -99,3 +99,98 @@ year,round,gp_name,circuit,position,driver,constructor,q1,q2,q3
 2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,13,BOR,Audi,1:14.775,1:14.071,
 2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,15,SAI,Williams,1:14.276,1:14.273,
 2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,16,BEA,Haas F1 Team,1:14.449,1:14.416,
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,14,GAS,Alpine F1 Team,1:14.698,1:14.187,
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,17,OCO,Haas F1 Team,1:14.845,,
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,18,ALB,Williams,1:14.851,,
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,19,ALO,Aston Martin,1:15.196,,
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,20,PER,Cadillac F1 Team,1:15.429,,
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,21,STR,Aston Martin,1:16.195,,
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,22,BOT,Cadillac F1 Team,1:16.272,,
+2026,6,Monaco Grand Prix,Circuit de Monaco,1,ANT,Mercedes,1:13.599,1:12.704,1:12.051
+2026,6,Monaco Grand Prix,Circuit de Monaco,2,VER,Red Bull,1:13.490,1:12.499,1:12.094
+2026,6,Monaco Grand Prix,Circuit de Monaco,3,HAM,Ferrari,1:13.777,1:12.934,1:12.279
+2026,6,Monaco Grand Prix,Circuit de Monaco,4,LEC,Ferrari,1:13.293,1:12.774,1:12.351
+2026,6,Monaco Grand Prix,Circuit de Monaco,5,HAD,Red Bull,1:14.408,1:12.722,1:12.434
+2026,6,Monaco Grand Prix,Circuit de Monaco,6,RUS,Mercedes,1:14.214,1:13.238,1:12.445
+2026,6,Monaco Grand Prix,Circuit de Monaco,7,PIA,McLaren,1:14.159,1:12.983,1:12.624
+2026,6,Monaco Grand Prix,Circuit de Monaco,8,NOR,McLaren,1:13.630,1:12.919,1:12.765
+2026,6,Monaco Grand Prix,Circuit de Monaco,9,GAS,Alpine F1 Team,1:14.469,1:13.762,1:13.226
+2026,6,Monaco Grand Prix,Circuit de Monaco,10,LAW,RB F1 Team,1:14.498,1:13.471,1:13.412
+2026,6,Monaco Grand Prix,Circuit de Monaco,11,ALB,Williams,1:14.321,1:13.787,
+2026,6,Monaco Grand Prix,Circuit de Monaco,12,SAI,Williams,1:14.348,1:13.815,
+2026,6,Monaco Grand Prix,Circuit de Monaco,13,HUL,Audi,1:13.923,1:13.902,
+2026,6,Monaco Grand Prix,Circuit de Monaco,14,COL,Alpine F1 Team,1:14.573,1:13.995,
+2026,6,Monaco Grand Prix,Circuit de Monaco,15,LIN,RB F1 Team,1:14.685,1:14.248,
+2026,6,Monaco Grand Prix,Circuit de Monaco,16,BOR,Audi,1:14.683,,
+2026,6,Monaco Grand Prix,Circuit de Monaco,17,OCO,Haas F1 Team,1:14.722,,
+2026,6,Monaco Grand Prix,Circuit de Monaco,18,PER,Cadillac F1 Team,1:14.747,,
+2026,6,Monaco Grand Prix,Circuit de Monaco,19,BEA,Haas F1 Team,1:14.814,,
+2026,6,Monaco Grand Prix,Circuit de Monaco,20,BOT,Cadillac F1 Team,1:15.283,,
+2026,6,Monaco Grand Prix,Circuit de Monaco,21,ALO,Aston Martin,1:15.349,,
+2026,6,Monaco Grand Prix,Circuit de Monaco,22,STR,Aston Martin,1:16.061,,
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,1,RUS,Mercedes,1:15.717,1:15.228,1:14.679
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,2,HAM,Ferrari,1:15.625,1:15.418,1:14.743
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,3,ANT,Mercedes,1:15.977,1:15.295,1:14.998
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,4,NOR,McLaren,1:16.287,1:15.361,1:15.001
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,5,VER,Red Bull,1:16.352,1:15.484,1:15.021
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,6,HAD,Red Bull,1:16.427,1:15.754,1:15.077
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,7,PIA,McLaren,1:16.138,1:15.518,1:15.090
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,8,LAW,RB F1 Team,1:16.673,1:15.585,1:16.542
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,9,HUL,Audi,1:16.066,1:15.768,1:16.657
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,10,LEC,Ferrari,1:15.964,1:15.281,
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,11,LIN,RB F1 Team,1:16.425,1:15.840,
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,12,BOR,Audi,1:16.616,1:16.001,
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,13,COL,Alpine F1 Team,1:16.590,1:16.191,
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,14,GAS,Alpine F1 Team,1:16.599,1:16.261,
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,15,BEA,Haas F1 Team,1:16.571,1:16.389,
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,16,SAI,Williams,1:16.881,1:17.827,
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,17,OCO,Haas F1 Team,1:17.073,,
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,18,ALB,Williams,1:17.424,,
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,19,PER,Cadillac F1 Team,1:17.545,,
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,20,BOT,Cadillac F1 Team,1:17.757,,
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,21,STR,Aston Martin,1:18.758,,
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,22,ALO,Aston Martin,1:18.815,,
+2026,8,Austrian Grand Prix,Red Bull Ring,1,RUS,Mercedes,1:07.398,1:06.979,1:06.113
+2026,8,Austrian Grand Prix,Red Bull Ring,2,LEC,Ferrari,1:07.543,1:07.030,1:06.349
+2026,8,Austrian Grand Prix,Red Bull Ring,3,HAM,Ferrari,1:07.290,1:06.994,1:06.408
+2026,8,Austrian Grand Prix,Red Bull Ring,4,ANT,Mercedes,1:07.083,1:06.763,1:06.414
+2026,8,Austrian Grand Prix,Red Bull Ring,5,VER,Red Bull,1:07.407,1:07.183,1:06.475
+2026,8,Austrian Grand Prix,Red Bull Ring,6,NOR,McLaren,1:07.259,1:06.897,1:06.502
+2026,8,Austrian Grand Prix,Red Bull Ring,7,PIA,McLaren,1:07.487,1:06.890,1:06.511
+2026,8,Austrian Grand Prix,Red Bull Ring,8,HAD,Red Bull,1:07.408,1:07.086,1:06.632
+2026,8,Austrian Grand Prix,Red Bull Ring,9,LAW,RB F1 Team,1:07.385,1:07.136,1:06.955
+2026,8,Austrian Grand Prix,Red Bull Ring,10,LIN,RB F1 Team,1:07.549,1:07.155,1:07.007
+2026,8,Austrian Grand Prix,Red Bull Ring,11,GAS,Alpine F1 Team,1:08.038,1:07.223,
+2026,8,Austrian Grand Prix,Red Bull Ring,12,BOR,Audi,1:08.035,1:07.293,
+2026,8,Austrian Grand Prix,Red Bull Ring,13,BEA,Haas F1 Team,1:08.061,1:07.523,
+2026,8,Austrian Grand Prix,Red Bull Ring,14,HUL,Audi,1:08.066,1:07.611,
+2026,8,Austrian Grand Prix,Red Bull Ring,15,OCO,Haas F1 Team,1:08.231,1:07.817,
+2026,8,Austrian Grand Prix,Red Bull Ring,16,COL,Alpine F1 Team,1:07.894,1:08.171,
+2026,8,Austrian Grand Prix,Red Bull Ring,17,SAI,Williams,1:08.252,,
+2026,8,Austrian Grand Prix,Red Bull Ring,18,ALB,Williams,1:08.509,,
+2026,8,Austrian Grand Prix,Red Bull Ring,19,PER,Cadillac F1 Team,1:08.945,,
+2026,8,Austrian Grand Prix,Red Bull Ring,20,BOT,Cadillac F1 Team,1:09.030,,
+2026,8,Austrian Grand Prix,Red Bull Ring,21,ALO,Aston Martin,1:09.942,,
+2026,8,Austrian Grand Prix,Red Bull Ring,22,STR,Aston Martin,1:10.363,,
+2026,9,British Grand Prix,Silverstone Circuit,1,ANT,Mercedes,1:29.719,1:28.493,1:28.111
+2026,9,British Grand Prix,Silverstone Circuit,2,LEC,Ferrari,1:29.534,1:28.626,1:28.286
+2026,9,British Grand Prix,Silverstone Circuit,3,HAM,Ferrari,1:29.644,1:28.864,1:28.458
+2026,9,British Grand Prix,Silverstone Circuit,4,RUS,Mercedes,1:29.985,1:28.920,1:28.481
+2026,9,British Grand Prix,Silverstone Circuit,5,HAD,Red Bull,1:29.276,1:29.069,1:28.746
+2026,9,British Grand Prix,Silverstone Circuit,6,NOR,McLaren,1:30.186,1:29.383,1:28.877
+2026,9,British Grand Prix,Silverstone Circuit,7,VER,Red Bull,1:29.549,1:29.113,1:28.893
+2026,9,British Grand Prix,Silverstone Circuit,8,PIA,McLaren,1:29.971,1:29.218,1:29.032
+2026,9,British Grand Prix,Silverstone Circuit,9,LIN,RB F1 Team,1:29.661,1:29.324,1:29.305
+2026,9,British Grand Prix,Silverstone Circuit,10,LAW,RB F1 Team,1:29.300,1:29.429,1:29.716
+2026,9,British Grand Prix,Silverstone Circuit,11,BOR,Audi,1:30.269,1:29.461,
+2026,9,British Grand Prix,Silverstone Circuit,12,GAS,Alpine F1 Team,1:30.345,1:30.063,
+2026,9,British Grand Prix,Silverstone Circuit,13,HUL,Audi,1:29.539,1:30.076,
+2026,9,British Grand Prix,Silverstone Circuit,14,BEA,Haas F1 Team,1:30.570,1:30.501,
+2026,9,British Grand Prix,Silverstone Circuit,15,SAI,Williams,1:30.562,1:30.623,
+2026,9,British Grand Prix,Silverstone Circuit,16,ALB,Williams,1:30.638,1:31.341,
+2026,9,British Grand Prix,Silverstone Circuit,17,OCO,Haas F1 Team,1:30.680,,
+2026,9,British Grand Prix,Silverstone Circuit,18,BOT,Cadillac F1 Team,1:31.227,,
+2026,9,British Grand Prix,Silverstone Circuit,19,COL,Alpine F1 Team,1:31.321,,
+2026,9,British Grand Prix,Silverstone Circuit,20,PER,Cadillac F1 Team,1:31.451,,
+2026,9,British Grand Prix,Silverstone Circuit,21,STR,Aston Martin,1:32.863,,
+2026,9,British Grand Prix,Silverstone Circuit,22,ALO,Aston Martin,1:33.025,,

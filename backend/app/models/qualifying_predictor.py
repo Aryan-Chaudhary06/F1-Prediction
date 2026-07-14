@@ -8,10 +8,8 @@ from xgboost import XGBRanker
 from sklearn.model_selection import GroupShuffleSplit
 
 from app.models.qualifying_feature_engineering import build_qualifying_training_features
+from app.models.weather_features import WEATHER_FEATURE_COLUMNS, attach_weather_features
 
-# ── Path resolution ──────────────────────────────────────────────────────────
-# Same HF Spaces-safe pattern as race_predictor.py — /tmp is writable there,
-# data/ is read-only. Set MODEL_DIR=/tmp in HF Space secrets to activate it.
 _DEFAULT_MODEL_DIR = os.path.join(os.path.dirname(__file__), "../../data")
 MODEL_DIR = os.getenv("MODEL_DIR", _DEFAULT_MODEL_DIR)
 os.makedirs(MODEL_DIR, exist_ok=True)
@@ -19,11 +17,16 @@ os.makedirs(MODEL_DIR, exist_ok=True)
 MODEL_PATH = os.path.join(MODEL_DIR, "qualifying_model.pkl")
 MODEL_META_PATH = os.path.join(MODEL_DIR, "qualifying_model.meta.json")
 
+# `is_wet` (was always a constant 0 — see qualifying_feature_engineering.py)
+# replaced by WEATHER_FEATURE_COLUMNS, attached separately via
+# weather_features.attach_weather_features() since it requires network I/O
+# that build_qualifying_training_features() intentionally doesn't do. See
+# RaceMindAI_Redesign_Phases6-7.md §6.4.
 FEATURES = [
     "driver_5race_avg_quali_pos", "driver_quali_pos_std",
-    "constructor_quali_pace_score", "circuit_type_code", "is_wet",
+    "constructor_quali_pace_score", "circuit_type_code",
     "round", "year",
-]
+] + WEATHER_FEATURE_COLUMNS
 
 # Reuse the same regulation-era weighting rationale as race_predictor.py —
 # 2026's new aero/PU rules likely shifted single-lap pace hierarchies too,
@@ -70,9 +73,24 @@ def compute_group_weights(df: pd.DataFrame, era_weights: dict = None) -> np.ndar
 
 def train_qualifying_model(historical_quali_df: pd.DataFrame,
                            use_era_weighting: bool = True,
-                           era_weights: dict = None) -> XGBRanker:
+                           era_weights: dict = None,
+                           weather_lookup: pd.DataFrame = None) -> XGBRanker:
     print("Building qualifying features...")
     df = build_qualifying_training_features(historical_quali_df)
+    if weather_lookup is not None:
+        df = attach_weather_features(df, weather_lookup)
+    else:
+        # No weather backfill provided — fill with the default Dry/no-
+        # signal row rather than leaving these columns absent, so
+        # dropna(subset=FEATURES) below doesn't drop every single row.
+        # Prefer passing weather_lookup (see main.py's training route)
+        # once a backfill has been run — see
+        # RaceMindAI_Redesign_Phases6-7.md §6.4, §7.5 step 3.
+        print("[qualifying_predictor] no weather_lookup provided — "
+              "training without real weather signal (default Dry filled in).")
+        from app.models.weather_features import default_weather_row
+        for col, val in default_weather_row().items():
+            df[col] = val
     df = df.dropna(subset=FEATURES)
 
     # XGBRanker requires rows for the same group to be contiguous — sort by

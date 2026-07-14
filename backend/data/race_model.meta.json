@@ -1,14 +1,19 @@
 {
-  "trained_at": "2026-07-03T07:07:57.285379",
+  "trained_at": "2026-07-14T13:40:01.338906",
   "years_trained_on": [
-    2022,
     2023,
     2024,
     2025,
     2026
   ],
-  "rows_trained_on": 463,
-  "accuracy": 0.9462,
+  "rows_trained_on": 1297,
+  "rows_train_split": 1020,
+  "rows_test_split": 165,
+  "split_method": "chronological_by_race",
+  "accuracy": 0.8848,
+  "calibrated": true,
+  "brier_score_raw": 0.0875,
+  "brier_score_calibrated": 0.096,
   "era_weighting_used": true,
   "era_weights": {
     "2022": 0.6,

@@ -2,7 +2,11 @@ import pandas as pd
 import numpy as np
 from typing import Dict, List, Optional
 
-POINTS_SYSTEM = {1:25, 2:18, 3:15, 4:12, 5:10, 6:8, 7:6, 8:4, 9:2, 10:1}
+# Was a local copy identical to feature_engineering.POINTS_MAP and
+# driver_dna.POINTS_MAP — now the shared definition. Kept as POINTS_SYSTEM
+# (this file's original name) via alias so every other reference in this
+# file stays unchanged. See RaceMindAI_Redesign_Phases6-7.md §6.5.
+from app.models.f1_constants import POINTS_MAP as POINTS_SYSTEM
 
 # ── Circuit-level safety car probability ────────────────────────────────────
 # Keyed by the SAME official circuit names used everywhere else in this
@@ -41,6 +45,21 @@ SAFETY_CAR_PROBABILITY_BY_CIRCUIT = {
     "Autodromo Jose Carlos Pace": 0.45,
     "Lusail International Circuit": 0.30,
     "Yas Marina Circuit": 0.25,
+    # NEW for 2026 — a genuinely new street circuit was previously falling
+    # to DEFAULT_SAFETY_CAR_PROBABILITY (0.40) here since it had no entry
+    # at all, which is very likely an underestimate: new/tight street
+    # circuits in this table run 0.48-0.72 (Miami 0.48, Jeddah 0.55, Baku
+    # 0.68, Monaco 0.72), not the generic default. Set in line with those
+    # rather than left as a silent gap. See RaceMindAI_Audit_Phases1-5.md
+    # Phase 2.5.1 finding #5 — replace with a real observed rate once
+    # actual 2026 data exists.
+    "Madring": 0.55,
+    # Was missing entirely from every taxonomy dict in the repo (not a
+    # naming-variant issue like the fixes above) — hosted the 2022 French
+    # GP, within this app's training window. Wide, low-walled circuit with
+    # generous runoff — similar SC profile to Barcelona/COTA, not a tight
+    # street circuit.
+    "Circuit Paul Ricard": 0.25,
 }
 DEFAULT_SAFETY_CAR_PROBABILITY = 0.40
 
@@ -221,15 +240,68 @@ def simulate_season(
         "wdc_probability", ascending=False
     ).reset_index(drop=True)
 
-def build_driver_strengths(standings: pd.DataFrame) -> Dict[str, float]:
+def build_driver_strengths(standings: pd.DataFrame,
+                           model_podium_probs: Optional[Dict[str, float]] = None,
+                           model_blend_weight: float = 0.5) -> Dict[str, float]:
+    """
+    Driver "strength" input for simulate_season()/simulate_race().
+
+    Previously this was ONLY a linear rescale of current championship
+    points (0.3 + 0.7 * points/max_points) — meaning the season simulator
+    had no connection at all to the trained race podium classifier, even
+    though that model exists and captures signal points don't (e.g. a
+    driver on a hot streak after a slow start won't show it in points yet,
+    since points lag current form). See RaceMindAI_Audit_Phases1-5.md
+    Phase 2.3 finding, RaceMindAI_Redesign_Phases6-7.md §6.5.
+
+    `model_podium_probs`: optional {driver: podium_probability} from the
+    trained race model (see main.py's `_compute_model_driver_strengths()`,
+    which builds this from each driver's most recent feature snapshot —
+    itself an approximation, since the simulator runs many different
+    future races rather than one specific circuit/grid; see that
+    function's docstring for the caveat). When given, each driver's final
+    strength is a blend of the points-based value and the model's value;
+    when omitted (or a driver has no model prediction available — e.g. a
+    brand-new rookie with no feature history), behavior is UNCHANGED from
+    before — pure points-based strength, so this is backward-compatible
+    with any caller not yet passing model_podium_probs.
+
+    `model_blend_weight`: 0.0 = ignore the model entirely (old behavior),
+    1.0 = use only the model's podium probability, 0.5 = equal blend
+    (default). Deliberately a simple linear blend rather than something
+    more elaborate — both signals are themselves approximations (points
+    lag form; the model's per-driver number here isn't circuit-specific),
+    so a transparent blend is more honest than a falsely precise
+    combination formula.
+    """
     max_pts = standings["points"].max()
     if max_pts == 0:
-        return {d: 0.5 for d in standings["driver"]}
-    strengths = {}
-    for _, row in standings.iterrows():
-        base = row["points"] / max_pts
-        strengths[row["driver"]] = round(0.3 + 0.7 * base, 4)
-    return strengths
+        points_strength = {d: 0.5 for d in standings["driver"]}
+    else:
+        points_strength = {}
+        for _, row in standings.iterrows():
+            base = row["points"] / max_pts
+            points_strength[row["driver"]] = round(0.3 + 0.7 * base, 4)
+
+    if not model_podium_probs:
+        return points_strength
+
+    blended = {}
+    for driver, pts_strength in points_strength.items():
+        model_component = model_podium_probs.get(driver)
+        if model_component is None:
+            blended[driver] = pts_strength  # no model signal for this driver — fall back unchanged
+        else:
+            # model_component is a 0-1 podium probability; points_strength
+            # lives on the 0.3-1.0 range set above. Rescale the model
+            # component onto the same range before blending — otherwise
+            # this would be averaging two differently-scaled numbers and
+            # calling it a strength, which isn't meaningful.
+            model_component_scaled = 0.3 + 0.7 * model_component
+            blended[driver] = round(
+                model_blend_weight * model_component_scaled + (1 - model_blend_weight) * pts_strength, 4
+            )
+    return blended
 
 
 def build_driver_dnf_rates(historical_results_df: pd.DataFrame) -> Dict[str, float]:

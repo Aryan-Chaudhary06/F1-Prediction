@@ -1,36 +1,3 @@
-"""
-app/data/concurrent_client.py
-─────────────────────────────
-Concurrent data fetcher for RaceMindAI.
-
-Replaces the three sequential blocking calls on the Live Standings page:
-
-    BEFORE (sequential — ~2.1s on a typical connection)
-    ─────────────────────────────────────────────────────
-    drivers      = get_driver_standings(year)   # blocks ~0.8s
-    constructors = get_constructor_standings(year)  # blocks ~0.7s
-    schedule     = get_season_schedule(year)    # blocks ~0.6s
-
-    AFTER (concurrent — ~0.8s, i.e. max(latencies) not sum)
-    ─────────────────────────────────────────────────────────
-    from app.data.concurrent_client import fetch_standings_page
-    data         = asyncio.run(fetch_standings_page(year))
-    drivers      = data["drivers"]
-    constructors = data["constructors"]
-    schedule     = data["schedule"]
-
-Design notes
-────────────
-- Uses asyncio + aiohttp so all three HTTP calls are dispatched at once
-  and the event loop waits only on the slowest one (max, not sum).
-- return_exceptions=True in asyncio.gather() means one timeout doesn't
-  kill the other two requests — each degrades to None independently.
-- Thread-safe for Streamlit: asyncio.run() creates a fresh event loop
-  per call (Streamlit reruns are each single-threaded).
-- Falls back gracefully if aiohttp is missing (ImportError message is
-  clear so the fix is obvious in deployment logs).
-"""
-
 import asyncio
 import time
 import logging
@@ -48,7 +15,7 @@ OPENF1_BASE  = "https://api.openf1.org/v1"
 # ─────────────────────────────────────────────────────────────────────────────
 
 async def _get_json(
-    session,          # aiohttp.ClientSession
+    session,          
     url: str,
     params: dict | None = None,
     label: str = "",
@@ -149,6 +116,7 @@ def _parse_schedule(raw: dict) -> pd.DataFrame:
             "circuit": r["Circuit"]["circuitName"],
             "country": r["Circuit"]["Location"]["country"],
             "date":    r["date"],
+            "time":    r.get("time"),
         })
     return pd.DataFrame(rows)
 
@@ -158,7 +126,7 @@ async def _fetch_standings_page_async(year: int, timeout_s: float = 12.0):
     Core coroutine: fires all three Jolpica calls concurrently with
     asyncio.gather() and returns parsed DataFrames + timing metadata.
     """
-    import aiohttp  # imported here so ImportError surfaces at call time
+    import aiohttp 
 
     wall_start = time.perf_counter()
 
@@ -168,7 +136,7 @@ async def _fetch_standings_page_async(year: int, timeout_s: float = 12.0):
             _fetch_driver_standings(session, year),
             _fetch_constructor_standings(session, year),
             _fetch_season_schedule(session, year),
-            return_exceptions=True,   # ← one failure won't kill the others
+            return_exceptions=True,  
         )
 
     wall_elapsed = round(time.perf_counter() - wall_start, 3)
@@ -222,7 +190,7 @@ def fetch_standings_page(year: int, timeout_s: float = 12.0) -> dict:
         per_call_latency : dict[str, float] — per-endpoint breakdown
     """
     try:
-        import aiohttp  # noqa: F401 — trigger ImportError early with clear message
+        import aiohttp 
     except ImportError:
         raise ImportError(
             "aiohttp is required for concurrent fetching. "

@@ -99,3 +99,382 @@ year,round,gp_name,circuit,driver,constructor,grid,position,points,status,laps
 2024,5,Chinese Grand Prix,Shanghai International Circuit,TSU,RB F1 Team,19,19,0.0,Retired,26
 2024,5,Chinese Grand Prix,Shanghai International Circuit,BOT,Sauber,10,20,0.0,Retired,19
 2024,6,Miami Grand Prix,Miami International Autodrome,NOR,McLaren,5,1,25.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,VER,Red Bull,1,2,18.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,LEC,Ferrari,2,3,15.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,PER,Red Bull,4,4,12.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,SAI,Ferrari,3,5,10.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,HAM,Mercedes,8,6,8.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,TSU,RB F1 Team,10,7,6.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,RUS,Mercedes,7,8,4.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,ALO,Aston Martin,15,9,2.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,OCO,Alpine F1 Team,13,10,1.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,HUL,Haas F1 Team,9,11,0.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,GAS,Alpine F1 Team,12,12,0.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,PIA,McLaren,6,13,0.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,ZHO,Sauber,19,14,0.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,RIC,RB F1 Team,20,15,0.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,BOT,Sauber,16,16,0.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,STR,Aston Martin,11,17,0.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,ALB,Williams,14,18,0.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,MAG,Haas F1 Team,18,19,0.0,Finished,57
+2024,6,Miami Grand Prix,Miami International Autodrome,SAR,Williams,17,20,0.0,Retired,27
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,VER,Red Bull,1,1,25.0,Finished,63
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,NOR,McLaren,2,2,18.0,Finished,63
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,LEC,Ferrari,3,3,15.0,Finished,63
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,PIA,McLaren,5,4,12.0,Finished,63
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,SAI,Ferrari,4,5,10.0,Finished,63
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,HAM,Mercedes,8,6,8.0,Finished,63
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,RUS,Mercedes,6,7,7.0,Finished,63
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,PER,Red Bull,11,8,4.0,Finished,63
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,STR,Aston Martin,13,9,2.0,Finished,63
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,TSU,RB F1 Team,7,10,1.0,Lapped,62
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,HUL,Haas F1 Team,10,11,0.0,Lapped,62
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,MAG,Haas F1 Team,18,12,0.0,Lapped,62
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,RIC,RB F1 Team,9,13,0.0,Lapped,62
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,OCO,Alpine F1 Team,12,14,0.0,Lapped,62
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,ZHO,Sauber,17,15,0.0,Lapped,62
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,GAS,Alpine F1 Team,15,16,0.0,Lapped,62
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,SAR,Williams,19,17,0.0,Lapped,62
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,BOT,Sauber,16,18,0.0,Lapped,62
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,ALO,Aston Martin,20,19,0.0,Lapped,62
+2024,7,Emilia Romagna Grand Prix,Autodromo Enzo e Dino Ferrari,ALB,Williams,14,20,0.0,Retired,51
+2024,8,Monaco Grand Prix,Circuit de Monaco,LEC,Ferrari,1,1,25.0,Finished,78
+2024,8,Monaco Grand Prix,Circuit de Monaco,PIA,McLaren,2,2,18.0,Finished,78
+2024,8,Monaco Grand Prix,Circuit de Monaco,SAI,Ferrari,3,3,15.0,Finished,78
+2024,8,Monaco Grand Prix,Circuit de Monaco,NOR,McLaren,4,4,12.0,Finished,78
+2024,8,Monaco Grand Prix,Circuit de Monaco,RUS,Mercedes,5,5,10.0,Finished,78
+2024,8,Monaco Grand Prix,Circuit de Monaco,VER,Red Bull,6,6,8.0,Finished,78
+2024,8,Monaco Grand Prix,Circuit de Monaco,HAM,Mercedes,7,7,7.0,Finished,78
+2024,8,Monaco Grand Prix,Circuit de Monaco,TSU,RB F1 Team,8,8,4.0,Lapped,77
+2024,8,Monaco Grand Prix,Circuit de Monaco,ALB,Williams,9,9,2.0,Lapped,77
+2024,8,Monaco Grand Prix,Circuit de Monaco,GAS,Alpine F1 Team,10,10,1.0,Lapped,77
+2024,8,Monaco Grand Prix,Circuit de Monaco,ALO,Aston Martin,14,11,0.0,Lapped,76
+2024,8,Monaco Grand Prix,Circuit de Monaco,RIC,RB F1 Team,12,12,0.0,Lapped,76
+2024,8,Monaco Grand Prix,Circuit de Monaco,BOT,Sauber,17,13,0.0,Lapped,76
+2024,8,Monaco Grand Prix,Circuit de Monaco,STR,Aston Martin,13,14,0.0,Lapped,76
+2024,8,Monaco Grand Prix,Circuit de Monaco,SAR,Williams,15,15,0.0,Lapped,76
+2024,8,Monaco Grand Prix,Circuit de Monaco,ZHO,Sauber,18,16,0.0,Lapped,76
+2024,8,Monaco Grand Prix,Circuit de Monaco,OCO,Alpine F1 Team,11,17,0.0,Retired,0
+2024,8,Monaco Grand Prix,Circuit de Monaco,PER,Red Bull,16,18,0.0,Retired,0
+2024,8,Monaco Grand Prix,Circuit de Monaco,HUL,Haas F1 Team,19,19,0.0,Retired,0
+2024,8,Monaco Grand Prix,Circuit de Monaco,MAG,Haas F1 Team,20,20,0.0,Retired,0
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,VER,Red Bull,2,1,25.0,Finished,70
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,NOR,McLaren,3,2,18.0,Finished,70
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,RUS,Mercedes,1,3,15.0,Finished,70
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,HAM,Mercedes,7,4,13.0,Finished,70
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,PIA,McLaren,4,5,10.0,Finished,70
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,ALO,Aston Martin,6,6,8.0,Finished,70
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,STR,Aston Martin,9,7,6.0,Finished,70
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,RIC,RB F1 Team,5,8,4.0,Finished,70
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,GAS,Alpine F1 Team,15,9,2.0,Finished,70
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,OCO,Alpine F1 Team,18,10,1.0,Finished,70
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,HUL,Haas F1 Team,17,11,0.0,Finished,70
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,MAG,Haas F1 Team,14,12,0.0,Finished,70
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,BOT,Sauber,19,13,0.0,Finished,70
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,TSU,RB F1 Team,8,14,0.0,Finished,70
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,ZHO,Sauber,20,15,0.0,Lapped,69
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,SAI,Ferrari,12,16,0.0,Retired,52
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,ALB,Williams,10,17,0.0,Retired,52
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,PER,Red Bull,16,18,0.0,Retired,51
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,LEC,Ferrari,11,19,0.0,Retired,40
+2024,9,Canadian Grand Prix,Circuit Gilles Villeneuve,SAR,Williams,13,20,0.0,Retired,23
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,VER,Red Bull,2,1,25.0,Finished,66
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,NOR,McLaren,1,2,19.0,Finished,66
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,HAM,Mercedes,3,3,15.0,Finished,66
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,RUS,Mercedes,4,4,12.0,Finished,66
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,LEC,Ferrari,5,5,10.0,Finished,66
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,SAI,Ferrari,6,6,8.0,Finished,66
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,PIA,McLaren,9,7,6.0,Finished,66
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,PER,Red Bull,11,8,4.0,Finished,66
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,GAS,Alpine F1 Team,7,9,2.0,Finished,66
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,OCO,Alpine F1 Team,8,10,1.0,Finished,66
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,HUL,Haas F1 Team,13,11,0.0,Finished,66
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,ALO,Aston Martin,10,12,0.0,Lapped,65
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,ZHO,Sauber,15,13,0.0,Lapped,65
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,STR,Aston Martin,14,14,0.0,Lapped,65
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,RIC,RB F1 Team,18,15,0.0,Lapped,65
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,BOT,Sauber,12,16,0.0,Lapped,65
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,MAG,Haas F1 Team,16,17,0.0,Lapped,65
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,ALB,Williams,20,18,0.0,Lapped,65
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,TSU,RB F1 Team,17,19,0.0,Lapped,65
+2024,10,Spanish Grand Prix,Circuit de Barcelona-Catalunya,SAR,Williams,19,20,0.0,Lapped,64
+2024,11,Austrian Grand Prix,Red Bull Ring,RUS,Mercedes,3,1,25.0,Finished,71
+2024,11,Austrian Grand Prix,Red Bull Ring,PIA,McLaren,7,2,18.0,Finished,71
+2024,11,Austrian Grand Prix,Red Bull Ring,SAI,Ferrari,4,3,15.0,Finished,71
+2024,11,Austrian Grand Prix,Red Bull Ring,HAM,Mercedes,5,4,12.0,Finished,71
+2024,11,Austrian Grand Prix,Red Bull Ring,VER,Red Bull,1,5,10.0,Finished,71
+2024,11,Austrian Grand Prix,Red Bull Ring,HUL,Haas F1 Team,9,6,8.0,Finished,71
+2024,11,Austrian Grand Prix,Red Bull Ring,PER,Red Bull,8,7,6.0,Finished,71
+2024,11,Austrian Grand Prix,Red Bull Ring,MAG,Haas F1 Team,12,8,4.0,Finished,71
+2024,11,Austrian Grand Prix,Red Bull Ring,RIC,RB F1 Team,11,9,2.0,Finished,71
+2024,11,Austrian Grand Prix,Red Bull Ring,GAS,Alpine F1 Team,13,10,1.0,Finished,71
+2024,11,Austrian Grand Prix,Red Bull Ring,LEC,Ferrari,6,11,0.0,Finished,71
+2024,11,Austrian Grand Prix,Red Bull Ring,OCO,Alpine F1 Team,10,12,0.0,Finished,71
+2024,11,Austrian Grand Prix,Red Bull Ring,STR,Aston Martin,17,13,0.0,Lapped,70
+2024,11,Austrian Grand Prix,Red Bull Ring,TSU,RB F1 Team,14,14,0.0,Lapped,70
+2024,11,Austrian Grand Prix,Red Bull Ring,ALB,Williams,16,15,0.0,Lapped,70
+2024,11,Austrian Grand Prix,Red Bull Ring,BOT,Sauber,18,16,0.0,Lapped,70
+2024,11,Austrian Grand Prix,Red Bull Ring,ZHO,Sauber,20,17,0.0,Lapped,70
+2024,11,Austrian Grand Prix,Red Bull Ring,ALO,Aston Martin,15,18,0.0,Lapped,70
+2024,11,Austrian Grand Prix,Red Bull Ring,SAR,Williams,19,19,0.0,Lapped,69
+2024,11,Austrian Grand Prix,Red Bull Ring,NOR,McLaren,2,20,0.0,Lapped,64
+2024,12,British Grand Prix,Silverstone Circuit,HAM,Mercedes,2,1,25.0,Finished,52
+2024,12,British Grand Prix,Silverstone Circuit,VER,Red Bull,4,2,18.0,Finished,52
+2024,12,British Grand Prix,Silverstone Circuit,NOR,McLaren,3,3,15.0,Finished,52
+2024,12,British Grand Prix,Silverstone Circuit,PIA,McLaren,5,4,12.0,Finished,52
+2024,12,British Grand Prix,Silverstone Circuit,SAI,Ferrari,7,5,11.0,Finished,52
+2024,12,British Grand Prix,Silverstone Circuit,HUL,Haas F1 Team,6,6,8.0,Finished,52
+2024,12,British Grand Prix,Silverstone Circuit,STR,Aston Martin,8,7,6.0,Finished,52
+2024,12,British Grand Prix,Silverstone Circuit,ALO,Aston Martin,10,8,4.0,Finished,52
+2024,12,British Grand Prix,Silverstone Circuit,ALB,Williams,9,9,2.0,Finished,52
+2024,12,British Grand Prix,Silverstone Circuit,TSU,RB F1 Team,13,10,1.0,Finished,52
+2024,12,British Grand Prix,Silverstone Circuit,SAR,Williams,12,11,0.0,Finished,52
+2024,12,British Grand Prix,Silverstone Circuit,MAG,Haas F1 Team,17,12,0.0,Finished,52
+2024,12,British Grand Prix,Silverstone Circuit,RIC,RB F1 Team,15,13,0.0,Lapped,51
+2024,12,British Grand Prix,Silverstone Circuit,LEC,Ferrari,11,14,0.0,Lapped,51
+2024,12,British Grand Prix,Silverstone Circuit,BOT,Sauber,16,15,0.0,Lapped,51
+2024,12,British Grand Prix,Silverstone Circuit,OCO,Alpine F1 Team,18,16,0.0,Lapped,50
+2024,12,British Grand Prix,Silverstone Circuit,PER,Red Bull,20,17,0.0,Lapped,50
+2024,12,British Grand Prix,Silverstone Circuit,ZHO,Sauber,14,18,0.0,Lapped,50
+2024,12,British Grand Prix,Silverstone Circuit,RUS,Mercedes,1,19,0.0,Retired,33
+2024,12,British Grand Prix,Silverstone Circuit,GAS,Alpine F1 Team,19,20,0.0,Did not start,0
+2024,13,Hungarian Grand Prix,Hungaroring,PIA,McLaren,2,1,25.0,Finished,70
+2024,13,Hungarian Grand Prix,Hungaroring,NOR,McLaren,1,2,18.0,Finished,70
+2024,13,Hungarian Grand Prix,Hungaroring,HAM,Mercedes,5,3,15.0,Finished,70
+2024,13,Hungarian Grand Prix,Hungaroring,LEC,Ferrari,6,4,12.0,Finished,70
+2024,13,Hungarian Grand Prix,Hungaroring,VER,Red Bull,3,5,10.0,Finished,70
+2024,13,Hungarian Grand Prix,Hungaroring,SAI,Ferrari,4,6,8.0,Finished,70
+2024,13,Hungarian Grand Prix,Hungaroring,PER,Red Bull,16,7,6.0,Finished,70
+2024,13,Hungarian Grand Prix,Hungaroring,RUS,Mercedes,17,8,5.0,Finished,70
+2024,13,Hungarian Grand Prix,Hungaroring,TSU,RB F1 Team,10,9,2.0,Finished,70
+2024,13,Hungarian Grand Prix,Hungaroring,STR,Aston Martin,8,10,1.0,Finished,70
+2024,13,Hungarian Grand Prix,Hungaroring,ALO,Aston Martin,7,11,0.0,Finished,70
+2024,13,Hungarian Grand Prix,Hungaroring,RIC,RB F1 Team,9,12,0.0,Lapped,69
+2024,13,Hungarian Grand Prix,Hungaroring,HUL,Haas F1 Team,11,13,0.0,Lapped,69
+2024,13,Hungarian Grand Prix,Hungaroring,ALB,Williams,13,14,0.0,Lapped,69
+2024,13,Hungarian Grand Prix,Hungaroring,MAG,Haas F1 Team,15,15,0.0,Lapped,69
+2024,13,Hungarian Grand Prix,Hungaroring,BOT,Sauber,12,16,0.0,Lapped,69
+2024,13,Hungarian Grand Prix,Hungaroring,SAR,Williams,14,17,0.0,Lapped,69
+2024,13,Hungarian Grand Prix,Hungaroring,OCO,Alpine F1 Team,19,18,0.0,Lapped,69
+2024,13,Hungarian Grand Prix,Hungaroring,ZHO,Sauber,18,19,0.0,Lapped,69
+2024,13,Hungarian Grand Prix,Hungaroring,GAS,Alpine F1 Team,20,20,0.0,Retired,33
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,HAM,Mercedes,3,1,25.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,PIA,McLaren,5,2,18.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,LEC,Ferrari,1,3,15.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,VER,Red Bull,11,4,12.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,NOR,McLaren,4,5,10.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,SAI,Ferrari,7,6,8.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,PER,Red Bull,2,7,7.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,ALO,Aston Martin,8,8,4.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,OCO,Alpine F1 Team,9,9,2.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,RIC,RB F1 Team,13,10,1.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,STR,Aston Martin,15,11,0.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,ALB,Williams,10,12,0.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,GAS,Alpine F1 Team,12,13,0.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,MAG,Haas F1 Team,17,14,0.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,BOT,Sauber,14,15,0.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,TSU,RB F1 Team,20,16,0.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,SAR,Williams,18,17,0.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,HUL,Haas F1 Team,16,18,0.0,Finished,44
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,ZHO,Sauber,19,19,0.0,Retired,5
+2024,14,Belgian Grand Prix,Circuit de Spa-Francorchamps,RUS,Mercedes,6,20,0.0,Disqualified,44
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,NOR,McLaren,1,1,26.0,Finished,72
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,VER,Red Bull,2,2,18.0,Finished,72
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,LEC,Ferrari,6,3,15.0,Finished,72
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,PIA,McLaren,3,4,12.0,Finished,72
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,SAI,Ferrari,10,5,10.0,Finished,72
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,PER,Red Bull,5,6,8.0,Finished,72
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,RUS,Mercedes,4,7,6.0,Finished,72
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,HAM,Mercedes,14,8,4.0,Finished,72
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,GAS,Alpine F1 Team,9,9,2.0,Lapped,71
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,ALO,Aston Martin,7,10,1.0,Lapped,71
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,HUL,Haas F1 Team,12,11,0.0,Lapped,71
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,RIC,RB F1 Team,13,12,0.0,Lapped,71
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,STR,Aston Martin,8,13,0.0,Lapped,71
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,ALB,Williams,19,14,0.0,Lapped,71
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,OCO,Alpine F1 Team,15,15,0.0,Lapped,71
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,SAR,Williams,18,16,0.0,Lapped,71
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,TSU,RB F1 Team,11,17,0.0,Lapped,71
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,MAG,Haas F1 Team,20,18,0.0,Lapped,71
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,BOT,Sauber,16,19,0.0,Lapped,70
+2024,15,Dutch Grand Prix,Circuit Park Zandvoort,ZHO,Sauber,17,20,0.0,Lapped,70
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,LEC,Ferrari,4,1,25.0,Finished,53
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,PIA,McLaren,2,2,18.0,Finished,53
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,NOR,McLaren,1,3,16.0,Finished,53
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,SAI,Ferrari,5,4,12.0,Finished,53
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,HAM,Mercedes,6,5,10.0,Finished,53
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,VER,Red Bull,7,6,8.0,Finished,53
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,RUS,Mercedes,3,7,6.0,Finished,53
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,PER,Red Bull,8,8,4.0,Finished,53
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,ALB,Williams,9,9,2.0,Finished,53
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,MAG,Haas F1 Team,13,10,1.0,Finished,53
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,ALO,Aston Martin,11,11,0.0,Finished,53
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,COL,Williams,18,12,0.0,Finished,53
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,RIC,RB F1 Team,12,13,0.0,Finished,53
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,OCO,Alpine F1 Team,15,14,0.0,Lapped,52
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,GAS,Alpine F1 Team,14,15,0.0,Lapped,52
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,BOT,Sauber,19,16,0.0,Lapped,52
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,HUL,Haas F1 Team,10,17,0.0,Lapped,52
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,ZHO,Sauber,20,18,0.0,Lapped,52
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,STR,Aston Martin,17,19,0.0,Lapped,52
+2024,16,Italian Grand Prix,Autodromo Nazionale di Monza,TSU,RB F1 Team,16,20,0.0,Retired,7
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,PIA,McLaren,2,1,25.0,Finished,51
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,LEC,Ferrari,1,2,18.0,Finished,51
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,RUS,Mercedes,5,3,15.0,Finished,51
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,NOR,McLaren,15,4,13.0,Finished,51
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,VER,Red Bull,6,5,10.0,Finished,51
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,ALO,Aston Martin,7,6,8.0,Finished,51
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,ALB,Williams,9,7,6.0,Finished,51
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,COL,Williams,8,8,4.0,Finished,51
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,HAM,Mercedes,19,9,2.0,Finished,51
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,BEA,Haas F1 Team,10,10,1.0,Finished,51
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,HUL,Haas F1 Team,12,11,0.0,Finished,51
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,GAS,Alpine F1 Team,18,12,0.0,Finished,51
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,RIC,RB F1 Team,14,13,0.0,Finished,51
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,ZHO,Sauber,17,14,0.0,Finished,51
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,OCO,Alpine F1 Team,20,15,0.0,Lapped,50
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,BOT,Sauber,16,16,0.0,Lapped,50
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,PER,Red Bull,4,17,0.0,Retired,49
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,SAI,Ferrari,3,18,0.0,Retired,49
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,STR,Aston Martin,13,19,0.0,Retired,45
+2024,17,Azerbaijan Grand Prix,Baku City Circuit,TSU,RB F1 Team,11,20,0.0,Retired,14
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,NOR,McLaren,1,1,25.0,Finished,62
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,VER,Red Bull,2,2,18.0,Finished,62
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,PIA,McLaren,5,3,15.0,Finished,62
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,RUS,Mercedes,4,4,12.0,Finished,62
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,LEC,Ferrari,9,5,10.0,Finished,62
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,HAM,Mercedes,3,6,8.0,Finished,62
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,SAI,Ferrari,10,7,6.0,Finished,62
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,ALO,Aston Martin,7,8,4.0,Lapped,61
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,HUL,Haas F1 Team,6,9,2.0,Lapped,61
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,PER,Red Bull,13,10,1.0,Lapped,61
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,COL,Williams,12,11,0.0,Lapped,61
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,TSU,RB F1 Team,8,12,0.0,Lapped,61
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,OCO,Alpine F1 Team,15,13,0.0,Lapped,61
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,STR,Aston Martin,17,14,0.0,Lapped,61
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,ZHO,Sauber,20,15,0.0,Lapped,61
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,BOT,Sauber,19,16,0.0,Lapped,61
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,GAS,Alpine F1 Team,18,17,0.0,Lapped,61
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,RIC,RB F1 Team,16,18,0.0,Lapped,61
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,MAG,Haas F1 Team,14,19,0.0,Retired,57
+2024,18,Singapore Grand Prix,Marina Bay Street Circuit,ALB,Williams,11,20,0.0,Retired,15
+2024,19,United States Grand Prix,Circuit of the Americas,LEC,Ferrari,4,1,25.0,Finished,56
+2024,19,United States Grand Prix,Circuit of the Americas,SAI,Ferrari,3,2,18.0,Finished,56
+2024,19,United States Grand Prix,Circuit of the Americas,VER,Red Bull,2,3,15.0,Finished,56
+2024,19,United States Grand Prix,Circuit of the Americas,NOR,McLaren,1,4,12.0,Finished,56
+2024,19,United States Grand Prix,Circuit of the Americas,PIA,McLaren,5,5,10.0,Finished,56
+2024,19,United States Grand Prix,Circuit of the Americas,RUS,Mercedes,20,6,8.0,Finished,56
+2024,19,United States Grand Prix,Circuit of the Americas,PER,Red Bull,9,7,6.0,Finished,56
+2024,19,United States Grand Prix,Circuit of the Americas,HUL,Haas F1 Team,11,8,4.0,Finished,56
+2024,19,United States Grand Prix,Circuit of the Americas,LAW,RB F1 Team,19,9,2.0,Finished,56
+2024,19,United States Grand Prix,Circuit of the Americas,COL,Williams,15,10,1.0,Finished,56
+2024,19,United States Grand Prix,Circuit of the Americas,MAG,Haas F1 Team,8,11,0.0,Finished,56
+2024,19,United States Grand Prix,Circuit of the Americas,GAS,Alpine F1 Team,6,12,0.0,Finished,56
+2024,19,United States Grand Prix,Circuit of the Americas,ALO,Aston Martin,7,13,0.0,Lapped,55
+2024,19,United States Grand Prix,Circuit of the Americas,TSU,RB F1 Team,10,14,0.0,Lapped,55
+2024,19,United States Grand Prix,Circuit of the Americas,STR,Aston Martin,13,15,0.0,Lapped,55
+2024,19,United States Grand Prix,Circuit of the Americas,ALB,Williams,14,16,0.0,Lapped,55
+2024,19,United States Grand Prix,Circuit of the Americas,BOT,Sauber,16,17,0.0,Lapped,55
+2024,19,United States Grand Prix,Circuit of the Americas,OCO,Alpine F1 Team,12,18,0.0,Lapped,55
+2024,19,United States Grand Prix,Circuit of the Americas,ZHO,Sauber,18,19,0.0,Lapped,55
+2024,19,United States Grand Prix,Circuit of the Americas,HAM,Mercedes,17,20,0.0,Retired,1
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,SAI,Ferrari,1,1,25.0,Finished,71
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,NOR,McLaren,3,2,18.0,Finished,71
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,LEC,Ferrari,4,3,16.0,Finished,71
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,HAM,Mercedes,6,4,12.0,Finished,71
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,RUS,Mercedes,5,5,10.0,Finished,71
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,VER,Red Bull,2,6,8.0,Finished,71
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,MAG,Haas F1 Team,7,7,6.0,Finished,71
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,PIA,McLaren,17,8,4.0,Finished,71
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,HUL,Haas F1 Team,10,9,2.0,Lapped,70
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,GAS,Alpine F1 Team,8,10,1.0,Lapped,70
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,STR,Aston Martin,14,11,0.0,Lapped,70
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,COL,Williams,16,12,0.0,Lapped,70
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,OCO,Alpine F1 Team,0,13,0.0,Lapped,70
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,BOT,Sauber,15,14,0.0,Lapped,70
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,ZHO,Sauber,19,15,0.0,Lapped,70
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,LAW,RB F1 Team,12,16,0.0,Lapped,70
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,PER,Red Bull,18,17,0.0,Lapped,70
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,ALO,Aston Martin,13,18,0.0,Retired,15
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,ALB,Williams,9,19,0.0,Retired,0
+2024,20,Mexico City Grand Prix,Autódromo Hermanos Rodríguez,TSU,RB F1 Team,11,20,0.0,Retired,0
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,VER,Red Bull,17,1,26.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,OCO,Alpine F1 Team,4,2,18.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,GAS,Alpine F1 Team,13,3,15.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,RUS,Mercedes,2,4,12.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,LEC,Ferrari,6,5,10.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,NOR,McLaren,1,6,8.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,TSU,RB F1 Team,3,7,6.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,PIA,McLaren,8,8,4.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,LAW,RB F1 Team,5,9,2.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,HAM,Mercedes,14,10,1.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,PER,Red Bull,12,11,0.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,BEA,Haas F1 Team,15,12,0.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,BOT,Sauber,11,13,0.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,ALO,Aston Martin,9,14,0.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,ZHO,Sauber,19,15,0.0,Finished,69
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,SAI,Ferrari,20,16,0.0,Retired,38
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,COL,Williams,16,17,0.0,Retired,30
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,ALB,Williams,7,18,0.0,Did not start,0
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,STR,Aston Martin,10,19,0.0,Did not start,0
+2024,21,São Paulo Grand Prix,Autódromo José Carlos Pace,HUL,Haas F1 Team,18,20,0.0,Disqualified,0
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,RUS,Mercedes,1,1,25.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,HAM,Mercedes,10,2,18.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,SAI,Ferrari,2,3,15.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,LEC,Ferrari,4,4,12.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,VER,Red Bull,5,5,10.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,NOR,McLaren,6,6,9.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,PIA,McLaren,8,7,6.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,HUL,Haas F1 Team,9,8,4.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,TSU,RB F1 Team,7,9,2.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,PER,Red Bull,15,10,1.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,ALO,Aston Martin,16,11,0.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,MAG,Haas F1 Team,12,12,0.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,ZHO,Sauber,13,13,0.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,COL,Williams,20,14,0.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,STR,Aston Martin,18,15,0.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,LAW,RB F1 Team,14,16,0.0,Finished,50
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,OCO,Alpine F1 Team,11,17,0.0,Lapped,49
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,BOT,Sauber,19,18,0.0,Lapped,49
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,ALB,Williams,17,19,0.0,Retired,25
+2024,22,Las Vegas Grand Prix,Las Vegas Strip Street Circuit,GAS,Alpine F1 Team,3,20,0.0,Retired,15
+2024,23,Qatar Grand Prix,Losail International Circuit,VER,Red Bull,2,1,25.0,Finished,57
+2024,23,Qatar Grand Prix,Losail International Circuit,LEC,Ferrari,5,2,18.0,Finished,57
+2024,23,Qatar Grand Prix,Losail International Circuit,PIA,McLaren,4,3,15.0,Finished,57
+2024,23,Qatar Grand Prix,Losail International Circuit,RUS,Mercedes,1,4,12.0,Finished,57
+2024,23,Qatar Grand Prix,Losail International Circuit,GAS,Alpine F1 Team,11,5,10.0,Finished,57
+2024,23,Qatar Grand Prix,Losail International Circuit,SAI,Ferrari,7,6,8.0,Finished,57
+2024,23,Qatar Grand Prix,Losail International Circuit,ALO,Aston Martin,8,7,6.0,Finished,57
+2024,23,Qatar Grand Prix,Losail International Circuit,ZHO,Sauber,12,8,4.0,Finished,57
+2024,23,Qatar Grand Prix,Losail International Circuit,MAG,Haas F1 Team,10,9,2.0,Finished,57
+2024,23,Qatar Grand Prix,Losail International Circuit,NOR,McLaren,3,10,2.0,Finished,57
+2024,23,Qatar Grand Prix,Losail International Circuit,BOT,Sauber,13,11,0.0,Finished,57
+2024,23,Qatar Grand Prix,Losail International Circuit,HAM,Mercedes,6,12,0.0,Finished,57
+2024,23,Qatar Grand Prix,Losail International Circuit,TSU,RB F1 Team,14,13,0.0,Finished,57
+2024,23,Qatar Grand Prix,Losail International Circuit,LAW,RB F1 Team,17,14,0.0,Finished,57
+2024,23,Qatar Grand Prix,Losail International Circuit,ALB,Williams,16,15,0.0,Lapped,56
+2024,23,Qatar Grand Prix,Losail International Circuit,HUL,Haas F1 Team,18,16,0.0,Retired,39
+2024,23,Qatar Grand Prix,Losail International Circuit,PER,Red Bull,9,17,0.0,Retired,38
+2024,23,Qatar Grand Prix,Losail International Circuit,STR,Aston Martin,15,18,0.0,Retired,8
+2024,23,Qatar Grand Prix,Losail International Circuit,COL,Williams,19,19,0.0,Retired,0
+2024,23,Qatar Grand Prix,Losail International Circuit,OCO,Alpine F1 Team,20,20,0.0,Retired,0
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,NOR,McLaren,1,1,25.0,Finished,58
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,SAI,Ferrari,3,2,18.0,Finished,58
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,LEC,Ferrari,19,3,15.0,Finished,58
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,HAM,Mercedes,16,4,12.0,Finished,58
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,RUS,Mercedes,6,5,10.0,Finished,58
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,VER,Red Bull,4,6,8.0,Finished,58
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,GAS,Alpine F1 Team,5,7,6.0,Finished,58
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,HUL,Haas F1 Team,7,8,4.0,Finished,58
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,ALO,Aston Martin,8,9,2.0,Finished,58
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,PIA,McLaren,2,10,1.0,Finished,58
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,ALB,Williams,18,11,0.0,Lapped,57
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,TSU,RB F1 Team,11,12,0.0,Lapped,57
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,ZHO,Sauber,15,13,0.0,Lapped,57
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,STR,Aston Martin,13,14,0.0,Lapped,57
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,DOO,Alpine F1 Team,17,15,0.0,Lapped,57
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,MAG,Haas F1 Team,14,16,0.0,Lapped,57
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,LAW,RB F1 Team,12,17,0.0,Retired,55
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,BOT,Sauber,9,18,0.0,Retired,30
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,COL,Williams,20,19,0.0,Retired,26
+2024,24,Abu Dhabi Grand Prix,Yas Marina Circuit,PER,Red Bull,10,20,0.0,Retired,0

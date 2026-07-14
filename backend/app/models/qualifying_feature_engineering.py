@@ -17,7 +17,7 @@ through one function would make both harder to follow.
 import pandas as pd
 import numpy as np
 
-from app.models.feature_engineering import CIRCUIT_TYPE
+from app.models.feature_engineering import CIRCUIT_TYPE, classify_circuit
 
 # Re-export the same circuit-type fallback constants used for race
 # predictions, so "new constructor" means the same thing in both models.
@@ -97,19 +97,30 @@ def build_qualifying_training_features(historical_quali_df: pd.DataFrame) -> pd.
     )
 
     df = df.sort_values(["driver", "year", "round"])
-    df["circuit_type"] = df["circuit"].map(CIRCUIT_TYPE).fillna("unknown")
+    # Same fix as feature_engineering.build_training_features() — was a
+    # raw df["circuit"].map(CIRCUIT_TYPE).fillna("unknown") that bypassed
+    # canonical_circuit_name() and silently mis-mapped any Jolpica circuit-
+    # name variant to "unknown".
+    df["circuit_type"] = df["circuit"].apply(classify_circuit)
     df["circuit_type_code"] = pd.Categorical(df["circuit_type"]).codes
 
-    is_wet_placeholder = 0  # see note in qualifying_predictor.py docstring —
-    # historical wet/dry flag isn't available from Jolpica; left as a
-    # constant column here so the FEATURES list stays stable even though
-    # at the moment it carries no signal. The Streamlit page still lets
-    # the user pick a weather condition for clarity/future use.
-    df["is_wet"] = is_wet_placeholder
+    # `is_wet` constant placeholder REMOVED — it was always 0 for every
+    # training row (no real signal, dead weight in the feature vector) and
+    # at inference time a user-selected "wet" condition could be set to 1
+    # for a session the model never saw a true wet example for. Superseded
+    # by weather_regime_code (Dry=0/Mixed=1/Wet=2), derived from a real
+    # forecast (live or historical-archive) and attached separately via
+    # app.models.weather_features.attach_weather_features() — see
+    # RaceMindAI_Redesign_Phases6-7.md §6.4. build_qualifying_training_features()
+    # itself stays a pure function of historical_quali_df with no network
+    # I/O; the weather attach step is a deliberate separate call by the
+    # caller (qualifying_predictor.train_qualifying_model()), same
+    # separation-of-concerns reasoning as weather_features.py's module
+    # docstring explains.
 
     features = [
         "driver_5race_avg_quali_pos", "driver_quali_pos_std",
-        "constructor_quali_pace_score", "circuit_type_code", "is_wet",
+        "constructor_quali_pace_score", "circuit_type_code",
         "round", "year",
     ]
     return df[features + ["position", "driver", "constructor", "circuit"]].copy()

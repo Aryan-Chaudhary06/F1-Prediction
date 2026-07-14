@@ -99,3 +99,101 @@ year,round,gp_name,circuit,driver,constructor,grid,position,points,status,laps
 2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,BEA,Haas F1 Team,16,10,1.0,Lapped,67
 2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,PIA,McLaren,4,11,0.0,Lapped,66
 2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,HUL,Audi,11,12,0.0,Lapped,66
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,BOR,Audi,13,13,0.0,Lapped,66
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,OCO,Haas F1 Team,17,14,0.0,Lapped,66
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,STR,Aston Martin,22,15,0.0,Lapped,64
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,BOT,Cadillac F1 Team,21,16,0.0,Lapped,64
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,PER,Cadillac F1 Team,20,17,0.0,Retired,39
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,NOR,McLaren,3,18,0.0,Retired,38
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,RUS,Mercedes,1,19,0.0,Retired,29
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,ALO,Aston Martin,19,20,0.0,Retired,23
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,ALB,Williams,18,21,0.0,Retired,11
+2026,5,Canadian Grand Prix,Circuit Gilles Villeneuve,LIN,RB F1 Team,9,22,0.0,Did not start,0
+2026,6,Monaco Grand Prix,Circuit de Monaco,ANT,Mercedes,1,1,25.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,HAM,Ferrari,3,2,18.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,GAS,Alpine F1 Team,9,3,15.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,HAD,Red Bull,5,4,12.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,PIA,McLaren,7,5,10.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,LAW,RB F1 Team,10,6,8.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,LIN,RB F1 Team,15,7,6.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,ALB,Williams,11,8,4.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,OCO,Haas F1 Team,17,9,2.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,ALO,Aston Martin,21,10,1.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,BOR,Audi,16,11,0.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,RUS,Mercedes,6,12,0.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,HUL,Audi,13,13,0.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,COL,Alpine F1 Team,14,14,0.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,PER,Cadillac F1 Team,18,15,0.0,Finished,78
+2026,6,Monaco Grand Prix,Circuit de Monaco,SAI,Williams,12,16,0.0,Retired,70
+2026,6,Monaco Grand Prix,Circuit de Monaco,LEC,Ferrari,4,17,0.0,Retired,64
+2026,6,Monaco Grand Prix,Circuit de Monaco,STR,Aston Martin,22,18,0.0,Retired,56
+2026,6,Monaco Grand Prix,Circuit de Monaco,NOR,McLaren,8,19,0.0,Retired,43
+2026,6,Monaco Grand Prix,Circuit de Monaco,BEA,Haas F1 Team,19,20,0.0,Retired,27
+2026,6,Monaco Grand Prix,Circuit de Monaco,BOT,Cadillac F1 Team,20,21,0.0,Retired,15
+2026,6,Monaco Grand Prix,Circuit de Monaco,VER,Red Bull,2,22,0.0,Retired,0
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,HAM,Ferrari,2,1,25.0,Finished,66
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,RUS,Mercedes,1,2,18.0,Finished,66
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,NOR,McLaren,4,3,15.0,Finished,66
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,VER,Red Bull,5,4,12.0,Finished,66
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,PIA,McLaren,7,5,10.0,Finished,66
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,HAD,Red Bull,6,6,8.0,Lapped,65
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,GAS,Alpine F1 Team,14,7,6.0,Lapped,65
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,LAW,RB F1 Team,8,8,4.0,Lapped,65
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,LIN,RB F1 Team,11,9,2.0,Lapped,65
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,COL,Alpine F1 Team,13,10,1.0,Lapped,65
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,BOR,Audi,12,11,0.0,Lapped,64
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,SAI,Williams,16,12,0.0,Lapped,64
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,OCO,Haas F1 Team,17,13,0.0,Lapped,64
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,PER,Cadillac F1 Team,19,14,0.0,Lapped,63
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,LEC,Ferrari,10,15,0.0,Retired,62
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,ANT,Mercedes,3,16,0.0,Retired,61
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,BEA,Haas F1 Team,15,17,0.0,Retired,60
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,ALB,Williams,18,18,0.0,Lapped,55
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,ALO,Aston Martin,22,19,0.0,Retired,37
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,HUL,Audi,9,20,0.0,Retired,29
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,BOT,Cadillac F1 Team,20,21,0.0,Retired,15
+2026,7,Barcelona Grand Prix,Circuit de Barcelona-Catalunya,STR,Aston Martin,21,22,0.0,Retired,5
+2026,8,Austrian Grand Prix,Red Bull Ring,RUS,Mercedes,1,1,25.0,Finished,71
+2026,8,Austrian Grand Prix,Red Bull Ring,VER,Red Bull,5,2,18.0,Finished,71
+2026,8,Austrian Grand Prix,Red Bull Ring,ANT,Mercedes,4,3,15.0,Finished,71
+2026,8,Austrian Grand Prix,Red Bull Ring,PIA,McLaren,7,4,12.0,Finished,71
+2026,8,Austrian Grand Prix,Red Bull Ring,HAM,Ferrari,3,5,10.0,Finished,71
+2026,8,Austrian Grand Prix,Red Bull Ring,HAD,Red Bull,8,6,8.0,Finished,71
+2026,8,Austrian Grand Prix,Red Bull Ring,NOR,McLaren,6,7,6.0,Finished,71
+2026,8,Austrian Grand Prix,Red Bull Ring,LEC,Ferrari,2,8,4.0,Finished,71
+2026,8,Austrian Grand Prix,Red Bull Ring,LAW,RB F1 Team,9,9,2.0,Lapped,70
+2026,8,Austrian Grand Prix,Red Bull Ring,LIN,RB F1 Team,10,10,1.0,Lapped,70
+2026,8,Austrian Grand Prix,Red Bull Ring,BOR,Audi,12,11,0.0,Lapped,70
+2026,8,Austrian Grand Prix,Red Bull Ring,HUL,Audi,14,12,0.0,Lapped,70
+2026,8,Austrian Grand Prix,Red Bull Ring,GAS,Alpine F1 Team,11,13,0.0,Lapped,70
+2026,8,Austrian Grand Prix,Red Bull Ring,BEA,Haas F1 Team,13,14,0.0,Lapped,70
+2026,8,Austrian Grand Prix,Red Bull Ring,COL,Alpine F1 Team,16,15,0.0,Lapped,70
+2026,8,Austrian Grand Prix,Red Bull Ring,OCO,Haas F1 Team,15,16,0.0,Lapped,69
+2026,8,Austrian Grand Prix,Red Bull Ring,ALB,Williams,18,17,0.0,Lapped,69
+2026,8,Austrian Grand Prix,Red Bull Ring,ALO,Aston Martin,21,18,0.0,Lapped,68
+2026,8,Austrian Grand Prix,Red Bull Ring,STR,Aston Martin,22,19,0.0,Retired,45
+2026,8,Austrian Grand Prix,Red Bull Ring,SAI,Williams,17,20,0.0,Retired,23
+2026,8,Austrian Grand Prix,Red Bull Ring,PER,Cadillac F1 Team,19,21,0.0,Retired,4
+2026,8,Austrian Grand Prix,Red Bull Ring,BOT,Cadillac F1 Team,20,22,0.0,Retired,2
+2026,9,British Grand Prix,Silverstone Circuit,LEC,Ferrari,2,1,25.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,RUS,Mercedes,4,2,18.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,HAM,Ferrari,3,3,15.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,NOR,McLaren,6,4,12.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,HAD,Red Bull,5,5,10.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,LAW,RB F1 Team,10,6,8.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,LIN,RB F1 Team,9,7,6.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,BOR,Audi,11,8,4.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,COL,Alpine F1 Team,19,9,2.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,GAS,Alpine F1 Team,15,10,1.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,PIA,McLaren,8,11,0.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,BEA,Haas F1 Team,13,12,0.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,OCO,Haas F1 Team,17,13,0.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,PER,Cadillac F1 Team,20,14,0.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,ANT,Mercedes,1,15,0.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,BOT,Cadillac F1 Team,18,16,0.0,Finished,52
+2026,9,British Grand Prix,Silverstone Circuit,SAI,Williams,14,17,0.0,Lapped,51
+2026,9,British Grand Prix,Silverstone Circuit,ALO,Aston Martin,21,18,0.0,Lapped,51
+2026,9,British Grand Prix,Silverstone Circuit,STR,Aston Martin,22,19,0.0,Lapped,51
+2026,9,British Grand Prix,Silverstone Circuit,VER,Red Bull,7,20,0.0,Retired,46
+2026,9,British Grand Prix,Silverstone Circuit,ALB,Williams,16,21,0.0,Retired,43
+2026,9,British Grand Prix,Silverstone Circuit,HUL,Audi,12,22,0.0,Retired,36

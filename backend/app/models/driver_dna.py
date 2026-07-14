@@ -2,20 +2,13 @@ import pandas as pd
 import numpy as np
 from app.data.ergast_client import get_historical_results
 
-CIRCUIT_TYPES = {
-    "street":        ["Monaco","Azerbaijan","Singapore","Miami","Las Vegas","Jeddah","Baku"],
-    "power":         ["Monza","Spa","Silverstone","Austria","Canada"],
-    "technical":     ["Hungary","Japan","Suzuka","COTA","United States","Mexico","São Paulo","Brazil"],
-    "high_downforce":["Bahrain","Spain","Barcelona","Abu Dhabi","Qatar","Netherlands","Zandvoort","Lusail"],
-}
-
-POINTS_MAP = {1:25,2:18,3:15,4:12,5:10,6:8,7:6,8:4,9:2,10:1}
-
-def classify_circuit(circuit_name: str) -> str:
-    for ctype, circuits in CIRCUIT_TYPES.items():
-        if any(c.lower() in circuit_name.lower() for c in circuits):
-            return ctype
-    return "technical"
+# CIRCUIT_TYPES (substring-match, fallback "technical") and the local
+# POINTS_MAP were previously defined here separately from
+# feature_engineering.CIRCUIT_TYPE (exact-match, fallback "unknown") — two
+# implementations that could and did disagree on the SAME circuit's
+# archetype. Now both come from one shared module. See
+# RaceMindAI_Audit_Phases1-5.md Phase 1.8/2.4, RaceMindAI_Redesign_Phases6-7.md §6.5.
+from app.models.f1_constants import POINTS_MAP, classify_circuit
 
 def build_driver_dna(historical_df: pd.DataFrame) -> pd.DataFrame:
     """

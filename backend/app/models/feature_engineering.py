@@ -1,34 +1,16 @@
 import pandas as pd
 import numpy as np
 
-POINTS_MAP = {1:25, 2:18, 3:15, 4:12, 5:10, 6:8, 7:6, 8:4, 9:2, 10:1}
-
-CIRCUIT_TYPE = {
-    "Bahrain International Circuit": "high_downforce",
-    "Jeddah Corniche Circuit": "street",
-    "Albert Park Grand Prix Circuit": "street",
-    "Suzuka Circuit": "technical",
-    "Shanghai International Circuit": "technical",
-    "Miami International Autodrome": "street",
-    "Autodromo Enzo e Dino Ferrari": "technical",
-    "Circuit de Monaco": "street",
-    "Circuit de Barcelona-Catalunya": "high_downforce",
-    "Circuit Gilles Villeneuve": "street",
-    "Red Bull Ring": "power",
-    "Silverstone Circuit": "power",
-    "Hungaroring": "high_downforce",
-    "Circuit de Spa-Francorchamps": "power",
-    "Circuit Zandvoort": "high_downforce",
-    "Autodromo Nazionale di Monza": "power",
-    "Baku City Circuit": "street",
-    "Marina Bay Street Circuit": "street",
-    "Circuit of the Americas": "technical",
-    "Autodromo Hermanos Rodriguez": "high_downforce",
-    "Autodromo Jose Carlos Pace": "technical",
-    "Las Vegas Strip Street Circuit": "street",
-    "Lusail International Circuit": "high_downforce",
-    "Yas Marina Circuit": "high_downforce",
-}
+# POINTS_MAP and CIRCUIT_TYPE were previously defined here directly, and
+# duplicated (POINTS_MAP identically, CIRCUIT_TYPE with a DIFFERENT
+# classification strategy) in driver_dna.py and season_simulator.py — see
+# RaceMindAI_Audit_Phases1-5.md Phase 1.8 / Phase 2.4, and
+# RaceMindAI_Redesign_Phases6-7.md §6.5. Now a single source of truth in
+# f1_constants.py; re-exported here under their original names so existing
+# imports elsewhere in this codebase (e.g. main.py's
+# `from app.models.feature_engineering import ... CIRCUIT_TYPE`) keep
+# working unchanged.
+from app.models.f1_constants import POINTS_MAP, CIRCUIT_TYPE, classify_circuit
 
 def build_training_features(historical_df: pd.DataFrame) -> pd.DataFrame:
     df = historical_df.copy()
@@ -54,24 +36,58 @@ def build_training_features(historical_df: pd.DataFrame) -> pd.DataFrame:
         .transform(lambda x: x.shift(1).rolling(10, min_periods=1).mean())
     )
 
-    circuit_avg = (
+    # driver_circuit_avg_pos — FIXED (was leaking future results): this
+    # used to be a groupby(["driver","circuit"]).mean() over the WHOLE
+    # dataset, so a driver's "average finish at this circuit" feature for
+    # a 2022 race included their results from 2023-2026 races at the same
+    # circuit that hadn't happened yet. Now an expanding average computed
+    # strictly from races before the current one, same shift(1) discipline
+    # already used for the rolling-form features above. See
+    # RaceMindAI_Audit_Phases1-5.md, Phase 2.1 / Phase 6.3.
+    df = df.sort_values(["driver", "circuit", "year", "round"])
+    df["driver_circuit_avg_pos"] = (
         df.groupby(["driver", "circuit"])["position"]
-        .mean()
-        .reset_index()
-        .rename(columns={"position": "driver_circuit_avg_pos"})
+        .transform(lambda x: x.shift(1).expanding().mean())
     )
-    df = df.merge(circuit_avg, on=["driver", "circuit"], how="left")
+    df = df.sort_values(["driver", "year", "round"])
 
-    constructor_avg = (
+    # constructor_avg_points — FIXED (was leaking the CURRENT race's own
+    # result): this used to average points_scored within the same
+    # (constructor, year, round) group, i.e. across a constructor's two
+    # cars IN THE SAME RACE being predicted. A driver's podium-probability
+    # feature therefore partly encoded their teammate's result in that
+    # identical race — leakage of the actual target race's outcome, not
+    # just of future races. Now computed as a per-race constructor average
+    # (still across both cars, since that's a legitimate same-race
+    # aggregate) but then rolled forward with shift(1) so only PRIOR races'
+    # constructor pace feeds into any given row, matching the 5-race
+    # rolling-form pattern used for driver_rolling_points above. See
+    # RaceMindAI_Audit_Phases1-5.md, Phase 2.1 / Phase 6.3.
+    constructor_race_avg = (
         df.groupby(["constructor", "year", "round"])["points_scored"]
         .mean()
         .reset_index()
-        .rename(columns={"points_scored": "constructor_avg_points"})
+        .rename(columns={"points_scored": "_constructor_race_avg_points"})
+        .sort_values(["constructor", "year", "round"])
     )
-    df = df.merge(constructor_avg, on=["constructor", "year", "round"], how="left")
+    constructor_race_avg["constructor_avg_points"] = (
+        constructor_race_avg.groupby("constructor")["_constructor_race_avg_points"]
+        .transform(lambda x: x.shift(1).rolling(5, min_periods=1).mean())
+    )
+    df = df.merge(
+        constructor_race_avg[["constructor", "year", "round", "constructor_avg_points"]],
+        on=["constructor", "year", "round"], how="left",
+    )
 
     df["grid_squared"] = df["grid"] ** 2
-    df["circuit_type"] = df["circuit"].map(CIRCUIT_TYPE).fillna("unknown")
+    # Was a raw df["circuit"].map(CIRCUIT_TYPE).fillna("unknown") — bypassed
+    # canonical_circuit_name() entirely, so any Jolpica circuit-name
+    # variant (accents, alternate spellings, extra words — see
+    # f1_constants.py's module docstring) silently produced "unknown" for
+    # every row at that circuit instead of resolving to the right
+    # archetype. classify_circuit() does the same lookup but through the
+    # canonicalization layer first.
+    df["circuit_type"] = df["circuit"].apply(classify_circuit)
     df["circuit_type_code"] = pd.Categorical(df["circuit_type"]).codes
 
     df["dnf"] = (~df["status"].str.contains("Finished|Lap", na=False)).astype(int)

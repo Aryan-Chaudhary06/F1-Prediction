@@ -1,30 +1,3 @@
-"""
-tests/benchmark_concurrent.py
-──────────────────────────────
-Measures sequential vs concurrent API latency for RaceMindAI.
-Run this once on your machine, then paste the printed numbers
-into your resume bullet.
-
-Usage
-─────
-    # from repo root
-    python -m tests.benchmark_concurrent
-
-    # or directly
-    python tests/benchmark_concurrent.py
-
-Output
-──────
-    Sequential  avg : 2.134s
-    Concurrent  avg : 0.821s
-    Reduction       : 61.5%
-
-    → Resume bullet:
-      Refactored 3 live API integrations (Jolpica × 2, OpenF1) from
-      sequential to concurrent using Python asyncio.gather(); reduced
-      dashboard data-load latency by ~62% (2.13s → 0.82s, 5-trial avg).
-"""
-
 import asyncio
 import time
 import sys
