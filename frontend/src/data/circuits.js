@@ -45,6 +45,7 @@ const RAW_MAP = {
   "Yas Marina Circuit": "yas-marina-2",
   "Circuito de Madring": "madring-1",
   "Madring": "madring-1",
+  "Sepang International Circuit": "sepang-1"
 };
 
 function normalize(str = "") {
